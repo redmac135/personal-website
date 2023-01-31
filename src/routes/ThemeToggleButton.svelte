@@ -1,12 +1,10 @@
 <script lang="ts">
-	let darkMode = true;
+	let darkMode = false;
 
 	function toggleTheme() {
 		darkMode = !darkMode;
 
-		darkMode
-			? document.body.classList.add('dark')
-			: document.body.classList.remove('dark');
+		darkMode ? document.body.classList.add('dark') : document.body.classList.remove('dark');
 	}
 </script>
 
@@ -27,7 +25,7 @@
 	}
 
 	#theme-toggle + label {
-		@apply inline-block cursor-pointer h-12 w-12 absolute top-6 right-24 rounded-full duration-300;
+		@apply cursor-pointer h-12 w-12 absolute top-6 right-12 rounded-full duration-300;
 	}
 
 	#theme-toggle:not(:checked) + label {
