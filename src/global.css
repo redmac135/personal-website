@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Primer Print";
+    src: url("fonts/PrimerPrint.otf");
+}
+@font-face {
+    font-family: "Primer Print";
+    src: url("fonts/PrimerPrintBold.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "BryantPro";
+    src: url("fonts/BryantPro-Regular.otf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "BryantPro";
+    src: url("fonts/BryantPro-RegularItalic.otf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "BryantPro";
+    src: url("fonts/BryantPro-Light.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "BryantPro";
+    src: url("fonts/BryantPro-LightItalic.otf");
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: "BryantPro";
+    src: url("fonts/BryantPro-Medium.otf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "BryantPro";
+    src: url("fonts/BryantPro-MediumItalic.otf");
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: "BryantPro";
+    src: url("fonts/BryantPro-Bold.otf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "BryantPro";
+    src: url("fonts/BryantPro-BoldItalic.otf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+body {
+	background-color: #f2eee2;
+	color: #0084f6;
+	transition: background-color 0.3s;
+    font-family: BryantPro;
+}
+
+body.dark {
+	background-color: #1d3040;
+	color: #bfc2c7;
+}

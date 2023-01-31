@@ -8,7 +8,7 @@
 	}
 </script>
 
-<div>
+<label class="relative inline-flex items-center cursor-pointer">
 	<input
 		checked={darkMode}
 		on:click={toggleTheme}
@@ -16,24 +16,19 @@
 		name="theme-toggle"
 		id="theme-toggle"
 	/>
-	<label for="theme-toggle" />
-</div>
+	<label
+		for="theme-toggle"
+		class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 dark:after:translate-x-full dark:after:shadow-[-9px_-8px_1px_1px_rgba(221, 221, 221, 1)] dark:after:bg-transparent after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-amber-400 after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600"
+	/>
+</label>
 
 <style lang="postcss">
 	#theme-toggle {
-		@apply invisible;
+		display: none;
 	}
 
-	#theme-toggle + label {
-		@apply cursor-pointer h-12 w-12 absolute top-6 right-12 rounded-full duration-300;
-	}
-
-	#theme-toggle:not(:checked) + label {
-		@apply bg-amber-400;
-	}
-
-	#theme-toggle:checked + label {
+	#theme-toggle:checked + label::after {
 		@apply bg-transparent;
-		box-shadow: inset -18px -16px 1px 1px #ddd;
+		box-shadow: inset -9px -8px 1px 1px rgb(221, 221, 221);
 	}
 </style>
