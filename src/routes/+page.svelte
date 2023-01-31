@@ -4,16 +4,16 @@
 	import WelcomePage from './WelcomePage.svelte';
 	import AboutPage from './AboutPage.svelte';
 
-	export let menu = 1;
+	let menu = 1;
+	let darkMode = false;
+
+	// navbar logo
+	$: logo = darkMode === false ? '/images/blacklogo.png' : '/images/whitelogo.png';
 </script>
 
-<header class="flex items-center m-6">
+<header class="flex items-center m-3">
 	<a href="/">
-		<img
-			src="https://flowbite.com/docs/images/logo.svg"
-			class="h-6 mr-3 sm:h-10"
-			alt="Flowbite Logo"
-		/>
+		<img src={logo} class="h-8 mr-3 sm:h-16" alt="Flowbite Logo" />
 	</a>
 	<div class="hidden md:block text-3xl">Ethan Zhao</div>
 	<nav class="flex ml-auto">
@@ -22,7 +22,7 @@
 		<a href="/" class="ml-6 text-2xl">Resume</a>
 	</nav>
 	<div class="ml-6 pt-2">
-		<ThemeToggle />
+		<ThemeToggle bind:darkMode />
 	</div>
 </header>
 
