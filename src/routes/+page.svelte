@@ -15,7 +15,7 @@
 			alt="Flowbite Logo"
 		/>
 	</a>
-	<div class="text-3xl">Ethan Zhao</div>
+	<div class="hidden md:block text-3xl">Ethan Zhao</div>
 	<nav class="flex ml-auto">
 		<a href="/" on:click|preventDefault={() => (menu = 1)} class="ml-6 text-2xl">Work</a>
 		<a href="/" on:click|preventDefault={() => (menu = 2)} class="ml-6 text-2xl">About</a>
