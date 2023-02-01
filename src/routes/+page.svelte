@@ -11,17 +11,17 @@
 	$: logo = darkMode === false ? '/images/blacklogo.png' : '/images/whitelogo.png';
 </script>
 
-<header class="flex items-center m-3">
+<header class="flex flex-col sm:flex-row items-center m-3">
 	<a href="/">
-		<img src={logo} class="h-8 mr-3 sm:h-16" alt="Flowbite Logo" />
+		<img src={logo} class="mr-3 h-16 min-w-max" alt="Personal Logo" />
 	</a>
-	<div class="hidden md:block text-3xl">Ethan Zhao</div>
-	<nav class="flex ml-auto">
-		<a href="/" on:click|preventDefault={() => (menu = 1)} class="ml-6 text-2xl">Work</a>
-		<a href="/" on:click|preventDefault={() => (menu = 2)} class="ml-6 text-2xl">About</a>
-		<a href="/" class="ml-6 text-2xl">Resume</a>
+	<div class="hidden sm:block text-3xl">Ethan Zhao</div>
+	<nav class="flex justify-center sm:ml-auto">
+		<a href="/" on:click|preventDefault={() => (menu = 1)} class="ml-6 text-2xl inline">Work</a>
+		<a href="/" on:click|preventDefault={() => (menu = 2)} class="ml-6 text-2xl inline">About</a>
+		<a href="/" class="ml-6 text-2xl inline">Resume</a>
 	</nav>
-	<div class="ml-6 pt-2">
+	<div class="sm:ml-6 pt-2">
 		<ThemeToggle bind:darkMode />
 	</div>
 </header>
@@ -31,3 +31,7 @@
 {:else if menu === 2}
 	<AboutPage />
 {/if}
+
+<style lang="postcss">
+
+</style>
