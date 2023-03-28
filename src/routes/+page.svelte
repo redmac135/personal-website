@@ -3,12 +3,32 @@
 
 	import WelcomePage from './WelcomePage.svelte';
 	import AboutPage from './AboutPage.svelte';
+	import ProjectCards from './ProjectCards.svelte';
 
 	let menu = 1;
-	let darkMode = false;
 
-	// navbar logo
+	// color mode control
+	let darkMode = false;
 	$: logo = darkMode === false ? '/images/blacklogo.png' : '/images/whitelogo.png';
+
+	// project cards
+	const projects = [
+		{
+			imagesrc: "/images/bansheeTrainingApp.jpg",
+			imagealt: "Screenshot of Training App Website",
+			title: "Banshee Training App"
+		},
+		{
+			imagesrc: "/images/bansheeTrainingApp.jpg",
+			imagealt: "Screenshot of Training App Website",
+			title: "Banshee Training App"
+		},
+		{
+			imagesrc: "/images/bansheeTrainingApp.jpg",
+			imagealt: "Screenshot of Training App Website",
+			title: "Banshee Training App"
+		}
+	]
 </script>
 
 <header class="flex flex-col sm:flex-row items-center m-3">
@@ -32,6 +52,5 @@
 	<AboutPage />
 {/if}
 
-<style lang="postcss">
+<ProjectCards />
 
-</style>
