@@ -4,6 +4,7 @@
 	function toggleTheme() {
 		darkMode.update(value => !value);
 
+		// currently used for global.css body style
 		$darkMode ? document.body.classList.add('dark') : document.body.classList.remove('dark');
 	}
 </script>
