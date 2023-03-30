@@ -7,17 +7,72 @@
     $: logo = $darkMode === false ? '/images/blacklogo.png' : '/images/whitelogo.png';
 </script>
 
-<header class="flex flex-col sm:flex-row items-center m-3">
+<header class="wrapper">
 	<a href="/">
-		<img src={logo} class="mr-3 h-16 min-w-max" alt="Personal Logo" />
+		<img src={logo} class="logo" alt="Personal Logo" />
 	</a>
-	<div class="hidden sm:block text-3xl">Ethan Zhao</div>
-	<nav class="flex justify-center sm:ml-auto">
-		<a href="/" on:click|preventDefault={() => (menu = 1)} class="ml-6 text-2xl inline">Work</a>
-		<a href="/" on:click|preventDefault={() => (menu = 2)} class="ml-6 text-2xl inline">About</a>
-		<a href="/" class="ml-6 text-2xl inline">Resume</a>
+	<div class="title">Ethan Zhao</div>
+	<nav class="links-wrapper">
+		<a href="/" on:click|preventDefault={() => (menu = 1)} class="link">Work</a>
+		<a href="/" on:click|preventDefault={() => (menu = 2)} class="link">About</a>
+		<a href="/" class="link">Resume</a>
 	</nav>
-	<div class="sm:ml-6 pt-2">
+	<div class="theme-wrapper">
 		<ThemeToggle />
 	</div>
 </header>
+
+<style lang="postcss">
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.75rem;
+    }
+
+    .logo {
+        margin-right: 0.75rem;
+        height: 4rem;
+        min-width: max-content;
+    }
+
+    .title {
+        display: none;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    .links-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link {
+        display: inline;
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .theme-wrapper {
+        padding-top: 0.5rem;
+    }
+
+    @media (min-width: 640px) {
+        .wrapper {
+            flex-direction: row;
+        }
+
+        .title {
+            display: block;
+        }
+
+        .links-wrapper {
+            margin-left: auto;
+        }
+
+        .theme-wrapper {
+            margin-left: 1.5rem;
+        }
+    }
+</style>
