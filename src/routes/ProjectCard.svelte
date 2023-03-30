@@ -1,4 +1,7 @@
 <script lang="ts">
+    import { darkMode } from "./stores/stores";
+    $: colorMode = $darkMode
+
 	export let imagesrc: string;
 	export let imagealt: string;
 	export let title: string;
@@ -7,7 +10,7 @@
 <div class="wrapper">
 	<img class="image" src={imagesrc} alt={imagealt} />
 	<div class="title">{title}</div>
-	<div class="fade" />
+	<div class="fade" class:fade-dark={colorMode} />
 </div>
 
 <style lang="postcss">
@@ -41,5 +44,12 @@
 			linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 80%) repeat
 			scroll 0 0;
         border-radius: var(--roundness);
+        transition: background 0.3s;
 	}
+
+    .fade-dark {
+        background: rgba(0, 0, 0, 0)
+			linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 80%) repeat
+			scroll 0 0;
+    }
 </style>
