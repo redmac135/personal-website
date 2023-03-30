@@ -1,35 +1,33 @@
 <script lang="ts">
-	import ThemeToggle from './ThemeToggleButton.svelte';
+	import ThemeToggle from './components/ThemeToggleButton.svelte';
 	import { darkMode } from './stores/stores';
 
-	import WelcomePage from './WelcomePage.svelte';
-	import AboutPage from './AboutPage.svelte';
-	import ProjectCards from './ProjectCards.svelte';
-
-	let menu = 1;
+	import WelcomePage from './pages/WelcomePage.svelte';
+	import ProjectCards from './components/ProjectCards.svelte';
 
 	// color mode control
-	
+	let menu = 1;
+
 	$: logo = $darkMode === false ? '/images/blacklogo.png' : '/images/whitelogo.png';
 
 	// project cards
 	const projects = [
 		{
-			imagesrc: "/images/bansheeTrainingApp.jpg",
-			imagealt: "Screenshot of Training App Website",
-			title: "Banshee Training App"
+			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagealt: 'Screenshot of Training App Website',
+			title: 'Banshee Training App'
 		},
 		{
-			imagesrc: "/images/bansheeTrainingApp.jpg",
-			imagealt: "Screenshot of Training App Website",
-			title: "Banshee Training App"
+			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagealt: 'Screenshot of Training App Website',
+			title: 'Banshee Training App'
 		},
 		{
-			imagesrc: "/images/bansheeTrainingApp.jpg",
-			imagealt: "Screenshot of Training App Website",
-			title: "Banshee Training App"
+			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagealt: 'Screenshot of Training App Website',
+			title: 'Banshee Training App'
 		}
-	]
+	];
 </script>
 
 <header class="flex flex-col sm:flex-row items-center m-3">
@@ -47,11 +45,14 @@
 	</div>
 </header>
 
-{#if menu === 1}
-	<WelcomePage />
-{:else if menu === 2}
-	<AboutPage />
-{/if}
+<WelcomePage />
+
+<div class="spacer" />
 
 <ProjectCards />
 
+<style lang="postcss">
+	.spacer {
+		height: 16rem;
+	}
+</style>
