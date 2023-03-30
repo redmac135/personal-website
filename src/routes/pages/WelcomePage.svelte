@@ -1,6 +1,5 @@
 <section class="wrapper">
 	<div class="inner-wrapper">
-		<div class="small-welcome">👋 Hi there, I'm</div>
 		<div class="title">Ethan Zhao</div>
 		<div class="subtitle">Changing the world one project at a time.</div>
 		<div class="icon-wrapper">
@@ -19,19 +18,14 @@
 		align-items: center;
 	}
 
-	.small-welcome {
-		display: contents;
-		text-align: left;
-		font-size: 1.125rem;
-    	line-height: 1.75rem;
-	}
-
 	.title {
-		font-size: 3rem;
+		text-align: center;
+		font-size: 5rem;
 		line-height: 1;
 	}
 
 	.subtitle {
+		text-align: center;
 		font-size: 1.6rem; 
 		line-height: 2.5rem;
 		font-style: italic;
@@ -40,6 +34,7 @@
 	.inner-wrapper {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 		max-width: 32rem;
 	}
 
@@ -47,7 +42,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		max-width: 24rem;
+		min-width: 18rem;
+		max-width: 25rem;
 		margin: 0.5rem 1rem 0.5rem 1rem;
 	}
 
@@ -58,24 +54,5 @@
 		fill: currentColor;
 		stroke-width: 1;
 		stroke: currentColor;
-	}
-
-	@media (min-width: 1024px) {
-		.small-welcome {
-			display: none;
-		}
-
-		.title {
-			text-align: center;
-			font-size: 5rem;
-		}
-
-		.subtitle {
-			text-align: center;
-		}
-
-		.icon-wrapper {
-			max-width: none;
-		}
 	}
 </style>
