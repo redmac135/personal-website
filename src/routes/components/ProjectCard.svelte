@@ -15,12 +15,11 @@
 
 <style lang="postcss">
     .wrapper {
-        --roundness: 0.375rem;
         position: relative;
         max-width: 32rem;
         display: block;
         margin: 1rem;
-        border-radius: var(--roundness);
+        border-radius: 0.5rem;
         border-width: 2px;
         border-color: gray;
         overflow: hidden;
@@ -43,7 +42,7 @@
 		background: rgba(255, 255, 255, 0)
 			linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 80%) repeat
 			scroll 0 0;
-        border-radius: var(--roundness);
+        border-radius: 0.375rem;
         transition: background 0.3s;
 	}
 

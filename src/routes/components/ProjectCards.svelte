@@ -37,7 +37,6 @@
     .card-wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        flex-wrap: wrap;
         max-width: 90rem;
         justify-content: center;
     }

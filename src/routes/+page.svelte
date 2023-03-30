@@ -28,12 +28,4 @@
 
 <WelcomePage />
 
-<div class="spacer" />
-
 <ProjectCards />
-
-<style lang="postcss">
-	.spacer {
-		height: 16rem;
-	}
-</style>
