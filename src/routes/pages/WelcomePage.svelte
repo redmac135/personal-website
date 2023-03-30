@@ -14,9 +14,9 @@
 <style lang="postcss">
 	.wrapper {
 		display: flex;
-		padding-top: 6rem;
-		padding-left: 2rem;
-		padding-right: 2rem;
+		height: 93vh;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.small-welcome {
@@ -60,18 +60,7 @@
 		stroke: currentColor;
 	}
 
-	@media (min-width: 768px) {
-		.wrapper {
-			padding-left: 2rem;
-			padding-right: 2rem;
-		}
-	}
-
 	@media (min-width: 1024px) {
-    	.wrapper {
-    	    justify-content: center;
-    	}
-
 		.small-welcome {
 			display: none;
 		}
