@@ -1,16 +1,16 @@
 <script lang="ts">
-	export let darkMode = false;
+	import { darkMode } from "./stores/stores";
 
 	function toggleTheme() {
-		darkMode = !darkMode;
+		darkMode.update(value => !value);
 
-		darkMode ? document.body.classList.add('dark') : document.body.classList.remove('dark');
+		$darkMode ? document.body.classList.add('dark') : document.body.classList.remove('dark');
 	}
 </script>
 
 <label class="relative inline-flex items-center cursor-pointer">
 	<input
-		checked={darkMode}
+		checked={$darkMode}
 		on:click={toggleTheme}
 		type="checkbox"
 		name="theme-toggle"

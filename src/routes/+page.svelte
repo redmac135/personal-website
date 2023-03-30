@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ThemeToggle from './ThemeToggleButton.svelte';
+	import { darkMode } from './stores/stores';
 
 	import WelcomePage from './WelcomePage.svelte';
 	import AboutPage from './AboutPage.svelte';
@@ -8,8 +9,8 @@
 	let menu = 1;
 
 	// color mode control
-	let darkMode = false;
-	$: logo = darkMode === false ? '/images/blacklogo.png' : '/images/whitelogo.png';
+	
+	$: logo = $darkMode === false ? '/images/blacklogo.png' : '/images/whitelogo.png';
 
 	// project cards
 	const projects = [
@@ -42,7 +43,7 @@
 		<a href="/" class="ml-6 text-2xl inline">Resume</a>
 	</nav>
 	<div class="sm:ml-6 pt-2">
-		<ThemeToggle bind:darkMode />
+		<ThemeToggle />
 	</div>
 </header>
 
