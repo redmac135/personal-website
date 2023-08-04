@@ -47,6 +47,7 @@
 
 <!-- TODO: make animation more 3d like -->
 <!-- TODO: make these things disappear when not in view -->
+<!-- TODO: move images into svelte import statements -->
 <main>
 	<div id="home">
 		<div id="darkener" style:opacity={interpolate(y, 0.7 * innerHeight, 1.8 * innerHeight, 0, 1)} />
