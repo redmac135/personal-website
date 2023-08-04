@@ -1,4 +1,6 @@
 <script lang="ts">
+	import imgtitle from '$lib/assets/images/text-thelifeofethanzhao.png';
+
 	let y = 0;
 	let innerHeight: number;
 
@@ -47,12 +49,15 @@
 <!-- TODO: make these things disappear when not in view -->
 <main>
 	<div id="home">
-		<div id="darkener" style:opacity={interpolate(y, 0.7 * innerHeight, 1.8 * innerHeight, 0, 1)}></div>
+		<div id="darkener" style:opacity={interpolate(y, 0.7 * innerHeight, 1.8 * innerHeight, 0, 1)} />
 		<div
 			id="foreground-image"
 			style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 2)},
 			{interpolate(y, 0, 1 * innerHeight, 1, 2)}, 1)"
 		/>
+		<div id="text-title" style:opacity={interpolate(y, 0, 0.5 * innerHeight, 1, 0)}>
+			<img src={imgtitle} alt="The life of Ethan Zhao" />
+		</div>
 		<div
 			id="background-image"
 			style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 1.5)},
@@ -90,6 +95,24 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		z-index: 1;
+	}
+
+	#text-title {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+	}
+
+	#text-title > img {
+		display: block;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 60vh;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: inherit;
 	}
 
 	#background-image {
