@@ -233,10 +233,8 @@
 		max-width: 60vh;
 	}
 
-	#about {
-		position: relative;
-		border-top: 5px white solid;
-		height: 300vh;
-		z-index: 4;
+	#projects {
+		display: flex;
+		justify-content: center;
 	}
 </style>

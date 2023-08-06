@@ -10,16 +10,22 @@
 	<div class="fade" />
 </div>
 
-<style lang="postcss">
+<style>
 	.wrapper {
 		position: relative;
-		max-width: 32rem;
+		max-width: 100%;
 		display: block;
 		margin: 1rem;
 		border-radius: 0.5rem;
 		border-width: 2px;
 		border-color: gray;
 		overflow: hidden;
+	}
+
+	.image {
+		display: block;
+		max-width: 100%;
+		height: auto;
 	}
 
 	.title {
