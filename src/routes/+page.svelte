@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ProjectCards from '$lib/components/ProjectCards.svelte';
 	import imgtitle from '$lib/assets/images/text-thelifeofethanzhao.png';
 
 	let y = 0;
@@ -68,6 +69,7 @@
 				<div>
 					<h1
 						class="about-title"
+						style="padding-bottom: 2rem;"
 						style:opacity={interpolate(y, 2.1 * innerHeight, 2.6 * innerHeight, 1, 0)}
 					>
 						about
@@ -99,17 +101,19 @@
 			/>
 		</div>
 	</div>
+	<div id="projects">
+		<ProjectCards />
+	</div>
 </main>
 
 <style>
 	main {
-		height: 600vh;
 		background-color: black;
 		overflow-x: clip;
 	}
 
 	#home {
-		height: 260vh;
+		height: 400vh;
 	}
 
 	.sticky-container {
