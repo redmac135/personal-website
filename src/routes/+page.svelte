@@ -47,13 +47,12 @@
 <svelte:window bind:scrollY={y} bind:innerHeight />
 
 <!-- TODO: make animation more 3d like -->
-<!-- TODO: make these things disappear when not in view -->
 <!-- TODO: move images into svelte import statements -->
 <main>
-	<div id="home">
+	<div id="home" style:opacity={(y < 3 * innerHeight) ? 1 : 0}>
 		<div class="sticky-container">
-			<div id="scroll-icon" style:opacity={interpolate(y, 0, 1 * innerHeight, 1, 0)}><span /></div>
-			<div id="darkener" style:opacity={interpolate(y, 1.1 * innerHeight, 2 * innerHeight, 0, 1)} />
+			<div id="scroll-icon" style:opacity={(y < 2 * innerHeight) ? 1 : 0}><span /></div>
+			<div id="darkener" style:opacity={interpolate(y, 0.9 * innerHeight, 1.8 * innerHeight, 0, 1)} />
 			<div
 				id="foreground-image"
 				style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 2)},
@@ -64,23 +63,23 @@
 			</div>
 			<div
 				class="centerer about"
-				style:opacity={interpolate(y, 0.6 * innerHeight, 1.1 * innerHeight, 0, 1)}
+				style:opacity={interpolate(y, 0.6 * innerHeight, 0.9 * innerHeight, 0, 1)}
 			>
 				<div>
 					<h1
 						class="about-title"
 						style="padding-bottom: 2rem;"
-						style:opacity={interpolate(y, 2.1 * innerHeight, 2.6 * innerHeight, 1, 0)}
+						style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
 					>
 						about
 					</h1>
 					<p
 						class="about-detail"
-						style:opacity={interpolate(y, 2.1 * innerHeight, 2.6 * innerHeight, 1, 0)}
+						style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
 						style:transform="translateY({interpolate(
 							y,
 							0.6 * innerHeight,
-							1.1 * innerHeight,
+							0.9 * innerHeight,
 							10,
 							0
 						)}rem)"
@@ -113,7 +112,7 @@
 	}
 
 	#home {
-		height: 400vh;
+		height: 300vh;
 	}
 
 	.sticky-container {
@@ -123,7 +122,7 @@
 
 	#scroll-icon span {
 		position: absolute;
-		top: calc(100vh - 6rem);
+		top: calc(100vh - 8rem);
 		left: 50%;
 		width: 50px;
 		height: 50px;
