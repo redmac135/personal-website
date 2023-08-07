@@ -7,7 +7,6 @@
 <div class="wrapper">
 	<img class="image" src={imagesrc} alt={imagealt} />
 	<div class="title">{title}</div>
-	<div class="fade" />
 </div>
 
 <style>
@@ -16,9 +15,6 @@
 		max-width: 100%;
 		display: block;
 		margin: 1rem;
-		border-radius: 0.5rem;
-		border-width: 2px;
-		border-color: gray;
 		overflow: hidden;
 	}
 
@@ -26,26 +22,14 @@
 		display: block;
 		max-width: 100%;
 		height: auto;
+		border-radius: 0.5rem;
+		border: 0.25rem gray solid;
+		margin-bottom: 0.4rem;
 	}
 
 	.title {
-		position: absolute;
-		bottom: 0.25rem;
-		right: 1rem;
-		z-index: 3;
-		font-weight: 600;
-	}
-
-	.fade {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		height: 200px;
-		z-index: 2;
-		background: rgba(255, 255, 255, 0)
-			linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 80%) repeat
-			scroll 0 0;
-		border-radius: 0.375rem;
-		transition: background 0.3s;
+		text-align: right;
+		font-size: 1.5rem;
+		font-weight: 400;
 	}
 </style>
