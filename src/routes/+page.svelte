@@ -49,10 +49,13 @@
 <!-- TODO: make animation more 3d like -->
 <!-- TODO: move images into svelte import statements -->
 <main>
-	<div id="home" style:opacity={(y < 3 * innerHeight) ? 1 : 0}>
+	<div id="home" style:opacity={y < 3 * innerHeight ? 1 : 0}>
 		<div class="sticky-container">
-			<div id="scroll-icon" style:opacity={(y < 2 * innerHeight) ? 1 : 0}><span /></div>
-			<div id="darkener" style:opacity={interpolate(y, 0.9 * innerHeight, 1.8 * innerHeight, 0, 1)} />
+			<div id="scroll-icon" style:opacity={y < 2 * innerHeight ? 1 : 0}><span /></div>
+			<div
+				id="darkener"
+				style:opacity={interpolate(y, 0.9 * innerHeight, 1.8 * innerHeight, 0, 1)}
+			/>
 			<div
 				id="foreground-image"
 				style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 2)},
@@ -101,6 +104,7 @@
 		</div>
 	</div>
 	<div id="projects">
+		<h1>Projects</h1>
 		<ProjectCards />
 	</div>
 </main>
@@ -234,6 +238,24 @@
 
 	#projects {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		z-index: 3;
+	}
+
+	#projects > h1 {
+		text-transform: uppercase;
+		z-index: inherit;
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: 400;
+		margin-bottom: 1rem;
+	}
+
+	@media (min-width: 900px) {
+		#projects > h1 {
+			font-size: 3rem;
+			margin-bottom: 1.5rem;
+		}
 	}
 </style>
