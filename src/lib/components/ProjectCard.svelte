@@ -48,16 +48,4 @@
 	.wrapper:focus > .title {
 		color: rgb(147, 187, 227);
 	}
-
-	@media (min-width: 900px) {
-		.title {
-			font-size: 1.5rem;
-		}
-	}
-
-	@media (min-width: 1200px) {
-		.title {
-			font-size: 2rem;
-		}
-	}
 </style>
