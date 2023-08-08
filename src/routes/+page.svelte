@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ProjectCards from '$lib/components/ProjectCards.svelte';
 	import imgtitle from '$lib/assets/images/text-thelifeofethanzhao.png';
+	import Title from '$lib/elements/Title.svelte';
 
 	let y = 0;
 	let innerHeight: number;
@@ -104,7 +105,7 @@
 		</div>
 	</div>
 	<div id="projects">
-		<h1>Projects</h1>
+		<Title>Projects</Title>
 		<ProjectCards />
 	</div>
 </main>
@@ -241,21 +242,5 @@
 		flex-direction: column;
 		justify-content: center;
 		z-index: 3;
-	}
-
-	#projects > h1 {
-		text-transform: uppercase;
-		z-index: inherit;
-		text-align: center;
-		font-size: 2.5rem;
-		font-weight: 400;
-		margin-bottom: 1rem;
-	}
-
-	@media (min-width: 900px) {
-		#projects > h1 {
-			font-size: 3rem;
-			margin-bottom: 1.5rem;
-		}
 	}
 </style>
