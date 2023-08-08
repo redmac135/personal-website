@@ -5,8 +5,11 @@
 </script>
 
 <Article>
-	<Title>Cadet Training App</Title>
-	<Meta item="tools">Django/Python, MySQL</Meta>
+	<div class="heading">
+		<Title>Cadet Training App</Title>
+		<Meta item="tools">Django/Python, MySQL</Meta>
+		<Meta item="date">Summer of Grade 11</Meta>
+	</div>
 
 	<p>
 		&nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet
@@ -23,6 +26,14 @@
 </Article>
 
 <style>
+	.heading {
+		display: flex;
+		flex-direction: column;
+		max-width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	p {
 		padding: 1.5rem 1.5rem 0 1.5rem;
 	}

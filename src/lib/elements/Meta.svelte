@@ -13,6 +13,7 @@
 		flex-direction: row;
 		align-items: center;
 		margin-left: 1rem;
+		margin-bottom: 0.4rem;
 	}
 
 	.item {
@@ -28,5 +29,11 @@
 		text-transform: uppercase;
 		font-weight: 600;
 		font-size: 0.9rem;
+	}
+
+	@media (min-width: 900px) {
+		.meta {
+			margin-left: 2rem;
+		}
 	}
 </style>
