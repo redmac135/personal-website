@@ -39,7 +39,8 @@
 	.card-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 1rem;
+		column-gap: 0.5rem;
+		row-gap: 0.25rem;
 		justify-content: center;
 		margin-left: 2rem;
 		margin-right: 2rem;
@@ -48,7 +49,8 @@
 	@media (min-width: 900px) {
 		.card-wrapper {
 			grid-template-columns: 1fr 1fr;
-			grid-gap: 2rem;
+			column-gap: 1rem;
+			row-gap: 0.5rem;
 			margin-left: 5rem;
 			margin-right: 5rem;
 		}

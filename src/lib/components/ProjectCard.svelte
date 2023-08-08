@@ -17,6 +17,7 @@
 		display: block;
 		margin: 1rem;
 		overflow: hidden;
+		transition: scale 0.2s;
 	}
 
 	.image {
@@ -24,7 +25,7 @@
 		max-width: 100%;
 		height: auto;
 		border-radius: 0.5rem;
-		border: 0.25rem gray solid;
+		border: 0.15rem gray solid;
 		margin-bottom: 0.4rem;
 	}
 
@@ -32,5 +33,31 @@
 		text-align: right;
 		font-size: 1.5rem;
 		font-weight: 400;
+	}
+
+	.wrapper:hover {
+		scale: 1.01;
+	}
+
+	.wrapper:hover > .image,
+	.wrapper:focus > .image {
+		border-color: rgb(147, 187, 227);
+	}
+
+	.wrapper:hover > .title,
+	.wrapper:focus > .title {
+		color: rgb(147, 187, 227);
+	}
+
+	@media (min-width: 900px) {
+		.title {
+			font-size: 1.5rem;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.title {
+			font-size: 2rem;
+		}
 	}
 </style>
