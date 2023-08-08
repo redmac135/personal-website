@@ -173,7 +173,7 @@
 		z-index: 2;
 		width: 100%;
 		height: 100vh;
-		background-color: black;
+		background-color: var(--background-color);
 		background-size: cover;
 	}
 
