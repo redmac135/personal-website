@@ -7,66 +7,67 @@
 
 	font-family: "BryantPro";
 	color: white;
+	text-decoration: none;
 }
 
 @font-face {
 	font-family: 'Primer Print';
-	src: url('fonts/PrimerPrint.otf');
+	src: url('/fonts/PrimerPrint.otf');
 }
 
 @font-face {
 	font-family: 'Primer Print';
-	src: url('fonts/PrimerPrintBold.otf');
+	src: url('/fonts/PrimerPrintBold.otf');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: 'BryantPro';
-	src: url('fonts/BryantPro-Regular.otf');
+	src: url('/fonts/BryantPro-Regular.otf');
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'BryantPro';
-	src: url('fonts/BryantPro-RegularItalic.otf');
+	src: url('/fonts/BryantPro-RegularItalic.otf');
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'BryantPro';
-	src: url('fonts/BryantPro-Light.otf');
+	src: url('/fonts/BryantPro-Light.otf');
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: 'BryantPro';
-	src: url('fonts/BryantPro-LightItalic.otf');
+	src: url('/fonts/BryantPro-LightItalic.otf');
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'BryantPro';
-	src: url('fonts/BryantPro-Medium.otf');
+	src: url('/fonts/BryantPro-Medium.otf');
 	font-weight: 500;
 }
 
 @font-face {
 	font-family: 'BryantPro';
-	src: url('fonts/BryantPro-MediumItalic.otf');
+	src: url('/fonts/BryantPro-MediumItalic.otf');
 	font-weight: 500;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'BryantPro';
-	src: url('fonts/BryantPro-Bold.otf');
+	src: url('/fonts/BryantPro-Bold.otf');
 	font-weight: 700;
 }
 
 @font-face {
 	font-family: 'BryantPro';
-	src: url('fonts/BryantPro-BoldItalic.otf');
+	src: url('/fonts/BryantPro-BoldItalic.otf');
 	font-weight: 700;
 	font-style: italic;
 }
