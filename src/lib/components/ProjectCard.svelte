@@ -2,12 +2,13 @@
 	export let imagesrc: string;
 	export let imagealt: string;
 	export let title: string;
+	export let url: string;
 </script>
 
-<div class="wrapper">
+<a class="wrapper" href="/projects/{url}">
 	<img class="image" src={imagesrc} alt={imagealt} />
 	<div class="title">{title}</div>
-</div>
+</a>
 
 <style>
 	.wrapper {
