@@ -2,6 +2,7 @@
 	import ProjectCards from '$lib/components/ProjectCards.svelte';
 	import imgtitle from '$lib/assets/images/text-thelifeofethanzhao.png';
 	import Title from '$lib/elements/Title.svelte';
+	import PageTransition from '$lib/components/PageTransition.svelte';
 
 	let y = 0;
 	let innerHeight: number;
@@ -47,68 +48,73 @@
 
 <svelte:window bind:scrollY={y} bind:innerHeight />
 
-<!-- TODO: make animation more 3d like -->
-<!-- TODO: move images into svelte import statements -->
-<main>
-	<div id="home" style:opacity={y < 3 * innerHeight ? 1 : 0}>
-		<div class="sticky-container">
-			<div id="scroll-icon" style:opacity={y < 2 * innerHeight ? 1 : 0}><span /></div>
-			<div
-				id="darkener"
-				style:opacity={interpolate(y, 0.9 * innerHeight, 1.8 * innerHeight, 0, 1)}
-			/>
-			<div
-				id="foreground-image"
-				style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 2)},
-				{interpolate(y, 0, 1 * innerHeight, 1, 2)}, 1)"
-			/>
-			<div class="centerer intro-title" style:opacity={interpolate(y, 0, 0.5 * innerHeight, 1, 0)}>
-				<img src={imgtitle} alt="The life of Ethan Zhao" />
-			</div>
-			<div
-				class="centerer about"
-				style:opacity={interpolate(y, 0.6 * innerHeight, 0.9 * innerHeight, 0, 1)}
-			>
-				<div>
-					<h1
-						class="about-title"
-						style="padding-bottom: 2rem;"
-						style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
-					>
-						about
-					</h1>
-					<p
-						class="about-detail"
-						style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
-						style:transform="translateY({interpolate(
-							y,
-							0.6 * innerHeight,
-							0.9 * innerHeight,
-							10,
-							0
-						)}rem)"
-					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet arcu
-						consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis
-						leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus
-						felis dapibus erat, vel congue mauris urna vel leo. Phasellus mauris massa, fringilla
-						vel lorem at, convallis convallis tellus. Sed pulvinar condimentum metus, vel interdum
-						nisl commodo quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
+<PageTransition animateOut={false}>
+	<!-- TODO: make animation more 3d like -->
+	<!-- TODO: move images into svelte import statements -->
+	<main>
+		<div id="home" style:opacity={y < 3 * innerHeight ? 1 : 0}>
+			<div class="sticky-container">
+				<div id="scroll-icon" style:opacity={y < 2 * innerHeight ? 1 : 0}><span /></div>
+				<div
+					id="darkener"
+					style:opacity={interpolate(y, 0.9 * innerHeight, 1.8 * innerHeight, 0, 1)}
+				/>
+				<div
+					id="foreground-image"
+					style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 2)},
+					{interpolate(y, 0, 1 * innerHeight, 1, 2)}, 1)"
+				/>
+				<div
+					class="centerer intro-title"
+					style:opacity={interpolate(y, 0, 0.5 * innerHeight, 1, 0)}
+				>
+					<img src={imgtitle} alt="The life of Ethan Zhao" />
 				</div>
+				<div
+					class="centerer about"
+					style:opacity={interpolate(y, 0.6 * innerHeight, 0.9 * innerHeight, 0, 1)}
+				>
+					<div>
+						<h1
+							class="about-title"
+							style="padding-bottom: 2rem;"
+							style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
+						>
+							about
+						</h1>
+						<p
+							class="about-detail"
+							style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
+							style:transform="translateY({interpolate(
+								y,
+								0.6 * innerHeight,
+								0.9 * innerHeight,
+								10,
+								0
+							)}rem)"
+						>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet arcu
+							consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis
+							leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus
+							felis dapibus erat, vel congue mauris urna vel leo. Phasellus mauris massa, fringilla
+							vel lorem at, convallis convallis tellus. Sed pulvinar condimentum metus, vel interdum
+							nisl commodo quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</div>
+				</div>
+				<div
+					id="background-image"
+					style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 1.5)},
+					{interpolate(y, 0, 1 * innerHeight, 1, 1.5)}, 1)"
+				/>
 			</div>
-			<div
-				id="background-image"
-				style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 1.5)},
-				{interpolate(y, 0, 1 * innerHeight, 1, 1.5)}, 1)"
-			/>
 		</div>
-	</div>
-	<div id="projects">
-		<Title>Projects</Title>
-		<ProjectCards />
-	</div>
-</main>
+		<div id="projects">
+			<Title>Projects</Title>
+			<ProjectCards />
+		</div>
+	</main>
+</PageTransition>
 
 <style>
 	main {
