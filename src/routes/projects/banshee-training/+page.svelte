@@ -1,15 +1,14 @@
 <script lang="ts">
 	import Article from '$lib/elements/Article.svelte';
-	import Title from '$lib/elements/Title.svelte';
-	import Meta from '$lib/elements/Meta.svelte';
+	import ArticleHeader from '$lib/elements/ArticleHeader.svelte';
+	import MetaItem from '$lib/elements/MetaItem.svelte';
 </script>
 
 <Article>
-	<div class="heading">
-		<Title>Cadet Training App</Title>
-		<Meta item="tools">Django/Python, MySQL</Meta>
-		<Meta item="date">Summer of Grade 11</Meta>
-	</div>
+	<ArticleHeader title="Cadet Training App">
+		<MetaItem item="tools">Django/Python, MySQL</MetaItem>
+		<MetaItem item="date">Summer of Grade 11</MetaItem>
+	</ArticleHeader>
 
 	<p>
 		&nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet
@@ -26,14 +25,6 @@
 </Article>
 
 <style>
-	.heading {
-		display: flex;
-		flex-direction: column;
-		max-width: fit-content;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
 	p {
 		padding: 1.5rem 1.5rem 0 1.5rem;
 	}
