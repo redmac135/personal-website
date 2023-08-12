@@ -1,9 +1,16 @@
 <script lang="ts">
 	import Header from './ArticleHeader.svelte';
+	import Link from './ArticleLink.svelte';
+	import Code from './ArticleCode.svelte';
+
+	const A = {
+		Link,
+		Code
+	};
 </script>
 
 <main>
-	<slot {Header} />
+	<slot {Header} {A} />
 </main>
 
 <style>
