@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ProjectCards from '$lib/components/ProjectCards.svelte';
 	import imgtitle from '$lib/assets/images/text-thelifeofethanzhao.png';
-	import Title from '$lib/elements/Title.svelte';
+	import Title from '$lib/components/Title.svelte';
 	import PageTransition from '$lib/components/PageTransition.svelte';
 
 	let y = 0;

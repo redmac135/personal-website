@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Article from '$lib/elements/Article.svelte';
-	import ArticleHeader from '$lib/elements/ArticleHeader.svelte';
-	import MetaItem from '$lib/elements/MetaItem.svelte';
+	import Article from '$lib/components/Article.svelte';
+	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
+	import MetaItem from '$lib/components/MetaItem.svelte';
 </script>
 
 <Article>

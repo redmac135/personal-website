@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ProjectCards from '$lib/components/ProjectCards.svelte';
-	import Title from '$lib/elements/Title.svelte';
+	import Title from '$lib/components/Title.svelte';
 </script>
 
 <main>
