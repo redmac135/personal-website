@@ -1,5 +1,5 @@
 :root {
-	--background-color: black
+	--background-color: black;
 }
 
 * {
@@ -9,7 +9,7 @@
 
 	box-sizing: border-box;
 
-	font-family: "BryantPro";
+	font-family: 'BryantPro';
 	color: white;
 	text-decoration: none;
 }
