@@ -1,12 +1,10 @@
 <script lang="ts">
 	import Title from './Title.svelte';
-
-	export let title: string;
+	import MetaItem from './MetaItem.svelte';
 </script>
 
 <div class="heading">
-	<Title>{title}</Title>
-	<slot />
+	<slot {Title} {MetaItem} />
 </div>
 
 <style>

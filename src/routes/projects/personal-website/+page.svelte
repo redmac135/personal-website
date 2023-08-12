@@ -1,14 +1,13 @@
 <script lang="ts">
 	import Article from '$lib/components/Article.svelte';
-	import ArticleHeader from '$lib/components/ArticleHeader.svelte';
-	import MetaItem from '$lib/components/MetaItem.svelte';
 </script>
 
-<Article>
-	<ArticleHeader title="Personal Website">
+<Article let:Header>
+	<Header let:Title let:MetaItem>
+		<Title>Personal Website</Title>
 		<MetaItem item="tools">Sveltekit, Blender, Vercel</MetaItem>
 		<MetaItem item="published">Aug 10, 2023</MetaItem>
-	</ArticleHeader>
+	</Header>
 
 	<p />
 </Article>

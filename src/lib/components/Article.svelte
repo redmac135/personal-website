@@ -1,5 +1,9 @@
+<script lang="ts">
+	import Header from './ArticleHeader.svelte';
+</script>
+
 <main>
-	<slot />
+	<slot {Header} />
 </main>
 
 <style>
