@@ -5,26 +5,32 @@
 		{
 			imagesrc: '/images/bansheeTrainingApp.jpg',
 			imagealt: 'Screenshot of Training App Website',
-			title: 'Banshee Training App',
+			title: 'Cadet Training App',
 			url: 'banshee-training'
 		},
 		{
 			imagesrc: '/images/bansheeTrainingApp.jpg',
 			imagealt: 'Screenshot of Training App Website',
-			title: 'Banshee Training App',
-			url: 'banshee-training'
+			title: 'Personal Website',
+			url: 'personal-website'
 		},
 		{
 			imagesrc: '/images/bansheeTrainingApp.jpg',
 			imagealt: 'Screenshot of Training App Website',
-			title: 'Banshee Training App',
-			url: 'banshee-training'
+			title: 'AI Gene based Cancer Detection',
+			url: 'foursight'
 		},
 		{
 			imagesrc: '/images/bansheeTrainingApp.jpg',
 			imagealt: 'Screenshot of Training App Website',
-			title: 'Banshee Training App',
-			url: 'banshee-training'
+			title: 'Mindful Reflection Journal',
+			url: 'mindful-reflections'
+		},
+		{
+			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagealt: 'Screenshot of Training App Website',
+			title: 'Particle Simulation',
+			url: 'java-particle-fields'
 		}
 	];
 </script>
