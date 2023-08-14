@@ -29,7 +29,7 @@
 		{
 			imagesrc: '/images/bansheeTrainingApp.jpg',
 			imagealt: 'Screenshot of Training App Website',
-			title: 'Particle Simulation',
+			title: 'Java Particle Simulation',
 			url: 'java-particle-fields'
 		}
 	];
