@@ -31,8 +31,6 @@
 			windowHeight = windowWidth * (1 / IMAGE_RATIO);
 		}
 
-		console.log(max(innerWidth / windowWidth, innerHeight / windowHeight));
-
 		return max(innerWidth / windowWidth, innerHeight / windowHeight);
 	}
 
