@@ -6,6 +6,35 @@
 
 	let y = 0;
 	let innerHeight: number;
+	let innerWidth: number;
+	const IMAGE_RATIO = 16 / 9;
+	const WINDOW_RATIO = 828 / 500;
+	const WINDOW_HORIZONTAL_RATIO = 828 / 1920;
+	const WINDOW_VERTICAL_RATIO = 500 / 1080;
+
+	function max(x: number, y: number) {
+		if (x > y) {
+			return x;
+		} else {
+			return y;
+		}
+	}
+
+	function foreground_scale_factor() {
+		let windowWidth;
+		let windowHeight;
+		if (innerWidth / innerHeight < IMAGE_RATIO) {
+			windowHeight = innerHeight * WINDOW_VERTICAL_RATIO;
+			windowWidth = windowHeight * WINDOW_RATIO;
+		} else {
+			windowWidth = innerWidth * WINDOW_HORIZONTAL_RATIO;
+			windowHeight = windowWidth * (1 / IMAGE_RATIO);
+		}
+
+		console.log(max(innerWidth / windowWidth, innerHeight / windowHeight));
+
+		return max(innerWidth / windowWidth, innerHeight / windowHeight);
+	}
 
 	function interpolate(
 		y: number,
@@ -46,7 +75,7 @@
 	];
 </script>
 
-<svelte:window bind:scrollY={y} bind:innerHeight />
+<svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
 
 <PageTransition animateOut={false}>
 	<!-- TODO: make animation more 3d like -->
@@ -61,8 +90,14 @@
 				/>
 				<div
 					id="foreground-image"
-					style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 2)},
-					{interpolate(y, 0, 1 * innerHeight, 1, 2)}, 1)"
+					style:transform="scale3d({interpolate(
+						y,
+						0,
+						1 * innerHeight,
+						1,
+						foreground_scale_factor()
+					)},
+					{interpolate(y, 0, 1 * innerHeight, 1, foreground_scale_factor())}, 1)"
 				/>
 				<div
 					class="centerer intro-title"
@@ -104,8 +139,14 @@
 				</div>
 				<div
 					id="background-image"
-					style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, 1.5)},
-					{interpolate(y, 0, 1 * innerHeight, 1, 1.5)}, 1)"
+					style:transform="scale3d({interpolate(
+						y,
+						0,
+						1 * innerHeight,
+						1,
+						(foreground_scale_factor() - 1) / 2 + 1
+					)},
+					{interpolate(y, 0, 1 * innerHeight, 1, (foreground_scale_factor() - 1) / 2 + 1)}, 1)"
 				/>
 			</div>
 		</div>
