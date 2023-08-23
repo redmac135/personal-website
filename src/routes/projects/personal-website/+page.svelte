@@ -35,6 +35,25 @@
 		being used for a element which wraps the whole page, it allows the user to scroll while the
 		container follows it.
 	</p>
+
+	<p>
+		&nbsp; &nbsp; For the actual image assets, I opted to create them in the open source 3D render
+		engine Blender. Following the theme of a personal portfoilo website, I choose to recreate my
+		childhood bedroom where I first learned how to code as the foreground while having a sunset with
+		islands as a background that the user will scroll into. The first iteration of these images just
+		used unreflective solid colors as textures while the sunset was more detailed with lighting. I
+		hope to improve these images and possibly have them evole over time as I work on future
+		projects.
+	</p>
+
+	<p>
+		&nbsp; &nbsp; The remainder of this project was straightforward. Writing blog posts and
+		descriptions and adding subtle transition effects using tools from <A.Code
+			>svelte/transition
+		</A.Code>. Overall, this project taught me the most about how to create a parallax effect from
+		scratch and abuse modern css tricks. While this was only a front-end project, it was still very
+		fun to work on.
+	</p>
 </Article>
 
 <!-- TODO: Create MetaList Element for "Credits" and "Inspire d By" at the bottom of page -->
