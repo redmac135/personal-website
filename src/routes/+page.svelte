@@ -52,25 +52,6 @@
 			return endValue;
 		}
 	}
-
-	// project cards
-	const projects = [
-		{
-			imagesrc: '/images/bansheeTrainingApp.jpg',
-			imagealt: 'Screenshot of Training App Website',
-			title: 'Banshee Training App'
-		},
-		{
-			imagesrc: '/images/bansheeTrainingApp.jpg',
-			imagealt: 'Screenshot of Training App Website',
-			title: 'Banshee Training App'
-		},
-		{
-			imagesrc: '/images/bansheeTrainingApp.jpg',
-			imagealt: 'Screenshot of Training App Website',
-			title: 'Banshee Training App'
-		}
-	];
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
