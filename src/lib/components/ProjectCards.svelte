@@ -1,33 +1,34 @@
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
+	import bansheeTrainingImg from '$lib/assets/images/banshee-training/thumbnail.jpg';
 
 	const projects = [
 		{
-			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagesrc: bansheeTrainingImg,
 			imagealt: 'Screenshot of Training App Website',
 			title: 'Cadet Training App',
 			url: 'banshee-training'
 		},
 		{
-			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagesrc: bansheeTrainingImg,
 			imagealt: 'Screenshot of Training App Website',
 			title: 'Personal Website',
 			url: 'personal-website'
 		},
 		{
-			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagesrc: bansheeTrainingImg,
 			imagealt: 'Screenshot of Training App Website',
 			title: 'AI Gene based Cancer Detection',
 			url: 'foursight'
 		},
 		{
-			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagesrc: bansheeTrainingImg,
 			imagealt: 'Screenshot of Training App Website',
 			title: 'Mindful Reflection Journal',
 			url: 'mindful-reflections'
 		},
 		{
-			imagesrc: '/images/bansheeTrainingApp.jpg',
+			imagesrc: bansheeTrainingImg,
 			imagealt: 'Screenshot of Training App Website',
 			title: 'Java Particle Simulation',
 			url: 'java-particle-fields'
