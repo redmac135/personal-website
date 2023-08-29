@@ -1,29 +1,23 @@
 <script lang="ts">
+	import './github-markdown-dark.css';
 	import Header from './ArticleHeader.svelte';
-	import Link from './ArticleLink.svelte';
-	import Code from './ArticleCode.svelte';
-
-	const A = {
-		Link,
-		Code
-	};
 </script>
 
-<main>
-	<slot {Header} {A} />
+<main class="markdown-body">
+	<div class="centerer">
+		<slot {Header} />
+	</div>
 </main>
 
 <style>
 	main {
-		margin-top: 1.5rem;
-		padding: 1.5rem;
+		padding-top: 5rem;
+		min-width: 100vh;
+		min-height: 100vh;
 	}
 
-	@media (min-width: 900px) {
-		main {
-			max-width: 60vw;
-			margin-left: auto;
-			margin-right: auto;
-		}
+	.centerer {
+		max-width: 60ch;
+		margin: auto;
 	}
 </style>

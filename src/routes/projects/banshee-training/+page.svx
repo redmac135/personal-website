@@ -1,0 +1,11 @@
+---
+layout: article
+title: Cadet Training App
+meta:
+- tools: Django/Python, MySQL
+- date: Summer of Grade 11
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet arcu consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus felis dapibus erat, vel congue mauris urna vel leo.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet arcu consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus felis dapibus erat, vel congue mauris urna vel leo.
