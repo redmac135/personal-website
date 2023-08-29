@@ -6,6 +6,12 @@
 		{
 			imagesrc: bansheeTrainingImg,
 			imagealt: 'Screenshot of Training App Website',
+			title: 'aPrep Tutors',
+			url: 'apreptutors'
+		},
+		{
+			imagesrc: bansheeTrainingImg,
+			imagealt: 'Screenshot of Training App Website',
 			title: 'Cadet Training App',
 			url: 'banshee-training'
 		},
