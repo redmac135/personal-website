@@ -1,0 +1,17 @@
+---
+layout: article
+title: Personal Website
+meta:
+- tools: Sveltekit, Blender, Vercel
+- published: Aug 31, 2023
+---
+
+For a while I've put off making a portfoilo website until I've actually amassed a portfoilo. Finally, after a number of projects, I'm taking on this one. My personal website had a few requirements. Firstly, the introduction had to be unique, too many template and easy copy and paste websites exist out there. Secondly, it had to actually be a challange to create, in other words, I needed to learn something new in the process of creating this portfoilo website. Finally, all assets used must be original--so no taking stock photos.
+
+Firstly, I searched the internet for sources of inspiration from many different website. Some used many 3d animations which would be too complicated both to create and both for a potential employer. I finally chose one based on it's balance of complexity and ease of use. The introduction annimation was inspied by a website for a show called [The Goonies](https://the-goonies.webflow.io/). It simulates 3d movement using a parallax effect that scales images at different rates.
+
+To accomplish this trick in svelte, I didn't use the builtin Parallax class as that was too complicated for my needs. Instead, I employed a solution which used svelte's `bind:scrollY` and css's `position: sticky`. Normally, sticky positioning is used as a way to make headings stick to the top of pages. Here, because sticky is being used for a element which wraps the whole page, it allows the user to scroll while the container follows it.
+
+For the actual image assets, I opted to create them in the open source 3D render engine Blender. Following the theme of a personal portfoilo website, I choose to recreate my childhood bedroom where I first learned how to code as the foreground while having a sunset with islands as a background that the user will scroll into. The first iteration of these images just used unreflective solid colors as textures while the sunset was more detailed with lighting. I hope to improve these images and possibly have them evole over time as I work on future projects.
+
+The remainder of this project was straightforward. Writing blog posts and descriptions and adding subtle transition effects using tools from `svelte/transition`. Overall, this project taught me the most about how to create a parallax effect from scratch and abuse modern css tricks. While this was only a front-end project, it was still very fun to work on.
