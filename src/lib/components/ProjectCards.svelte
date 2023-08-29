@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
-	import bansheeTrainingImg from '$lib/assets/images/banshee-training/thumbnail.jpg';
+	import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.jpg';
 
 	const projects = [
 		{
