@@ -2,7 +2,7 @@
 <script lang="ts">
 	// adding string type causes dev server to crash, issue on mdsvex
 	export let title;
-	export let meta;
+	export let meta = [];
 
 	import Article from '$lib/components/Article.svelte';
 </script>
