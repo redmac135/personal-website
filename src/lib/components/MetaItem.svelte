@@ -4,7 +4,7 @@
 
 <div class="meta">
 	<div class="item">{item}</div>
-	<p class="value"><slot /></p>
+	<div class="value"><slot /></div>
 </div>
 
 <style>

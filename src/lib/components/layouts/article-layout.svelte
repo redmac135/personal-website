@@ -1,30 +1,22 @@
 <!-- script tag error is caused by mdsvex issue 116 -->
 <script lang="ts">
-	import './github-markdown-dark.css';
 	// adding string type causes dev server to crash, issue on mdsvex
 	export let title;
+	export let meta;
+
+	import Article from '$lib/components/Article.svelte';
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 </svelte:head>
 
-<main class="markdown-body">
-	<div class="centerer">
-		<h1>{title}</h1>
-		<slot />
-	</div>
-</main>
-
-<style>
-	main {
-		padding-top: 10rem;
-		min-width: 100vh;
-		min-height: 100vh;
-	}
-
-	.centerer {
-		max-width: 60ch;
-		margin: auto;
-	}
-</style>
+<Article let:Header>
+	<Header let:Title let:MetaItem>
+		<Title>{title}</Title>
+		{#each meta as metaitem}
+			<MetaItem item={Object.keys(metaitem)[0]}>{Object.values(metaitem)[0]}</MetaItem>
+		{/each}
+	</Header>
+	<slot />
+</Article>
