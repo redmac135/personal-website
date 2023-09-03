@@ -1,4 +1,8 @@
 ---
 layout: article
 title: Java Particle Simulation
+meta:
+- program: Java
 ---
+
+Particle simulator capable for simulating a large number of particles and multiple force fields. Uses sub-steps to improve render time and accuracy. 
