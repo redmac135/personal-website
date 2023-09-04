@@ -4,6 +4,7 @@ title: Personal Website
 meta:
 - stack: Sveltekit, Vercel
 - tools: Blender
+- github: [https://github.com/redmac135/personal-website, redmac135/personal-website]
 ---
 
 A personal portfolio website with a sudo-3d parallax intro and cards showcasing each project I've completed. The project descriptions are stored in markdown format and rendered to svelte, then html, using `mdsvex` and custom svelte components. The parallax effect was done by using the `position: sticky` css property and connecting the scale of all images with the pixels scrolled by the user. This parallax method allows for more flexibility of design and makes it easier for web crawlers and accessible programs to read the site.

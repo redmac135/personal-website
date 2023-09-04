@@ -3,6 +3,8 @@ layout: article
 title: Cadet Training App
 meta:
 - stack: Tailwindcss, Django, MySQL
+link:
+- github: [https://github.com/redmac135/banshee-training, redmac135/banshee-training]
 ---
 
 Created for 778 Royal Canadian Air Cadets, this web app helps automatically assign training, track individual attendance and pass rate of each cadet. Also allows senior cadets to assign and notify instructors on which lessons to prepare for and when they will be teaching it. Has a dashboard for each user outlining where they need to be at all times. Saves over 8 hours of work every week for the training team.

@@ -4,6 +4,8 @@ title: aPrep Tutors
 meta:
 - stack: Svelte, Firebase, Django, MySQL
 - tools: goDaddy, pythonAnywhere
+link:
+- github: [https://github.com/redmac135/apreptutors, redmac135/apreptutors]
 ---
 
 A website built for a tutoring company which allows for the user to instantly book a trial class and schedule twice weekly classes. Instructors fill in the subjects they are qualified to teach and the timeslots and locations they can teach in. Then, each possible student which inputs get location and subject gets every timeslot where there is a potential instructor returned to them. Uses a dynamic form to prevent selecting two separate instructors for twice weekly classes while still exposing as many available time slots as possible.

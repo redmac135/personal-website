@@ -3,6 +3,8 @@ layout: article
 title: Mindful Reflection Journal
 meta:
 - Stack: Tailwindcss, Django, MySQL
+link:
+- github: [https://github.com/redmac135/mindful, redmac135/mindful]
 ---
 
 Created as a project for a Highschool Mindful Club, this journaling app focuses on quick and easy journals with a few multiple choice questions and a easy daily mood tracker. Daily quotes are given to each user depending on their mood.

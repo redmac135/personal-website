@@ -1,10 +1,11 @@
 <script lang="ts">
 	import Title from './Title.svelte';
 	import MetaItem from './MetaItem.svelte';
+	import MetaLink from './MetaLink.svelte';
 </script>
 
 <div class="heading">
-	<slot {Title} {MetaItem} />
+	<slot {Title} {MetaItem} {MetaLink} />
 </div>
 
 <style>
