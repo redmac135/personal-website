@@ -265,6 +265,7 @@
 
 	#projects {
 		display: flex;
+		padding-top: 3rem;
 		flex-direction: column;
 		justify-content: center;
 		z-index: 3;
