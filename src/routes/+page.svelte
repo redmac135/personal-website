@@ -34,6 +34,14 @@
 		return max(innerWidth / windowWidth, innerHeight / windowHeight);
 	}
 
+	function calculate_window_width(innerWidth: number, innerHeight: number): number {
+		if (innerWidth / innerHeight < IMAGE_RATIO) {
+			return innerHeight * WINDOW_VERTICAL_RATIO * WINDOW_RATIO;
+		} else {
+			return innerWidth * WINDOW_HORIZONTAL_RATIO;
+		}
+	}
+
 	function interpolate(
 		y: number,
 		startY: number,
@@ -82,7 +90,11 @@
 					class="centerer intro-title"
 					style:opacity={interpolate(y, 0, 0.5 * innerHeight, 1, 0)}
 				>
-					<img src={imgtitle} alt="The life of Ethan Zhao" />
+					<img
+						src={imgtitle}
+						style="--window-width: {calculate_window_width(innerWidth, innerHeight)}px"
+						alt="The life of Ethan Zhao"
+					/>
 				</div>
 				<div
 					class="centerer about"
@@ -260,7 +272,7 @@
 	}
 
 	.intro-title > img {
-		max-width: 60vh;
+		max-width: calc(var(--window-width) * 0.95);
 	}
 
 	#projects {
