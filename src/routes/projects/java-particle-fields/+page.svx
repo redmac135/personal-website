@@ -3,6 +3,7 @@ layout: article
 title: Java Particle Simulation
 meta:
 - program: Java
+- published: March 16th, 2023
 link:
 - github: [https://github.com/redmac135/java-particle-fields, redmac135/java-particle-fields]
 ---

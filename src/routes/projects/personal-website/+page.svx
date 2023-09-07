@@ -4,6 +4,8 @@ title: Personal Website
 meta:
 - stack: Sveltekit, Vercel
 - tools: Blender
+- published: Sept 15th, 2023
+link:
 - github: [https://github.com/redmac135/personal-website, redmac135/personal-website]
 ---
 

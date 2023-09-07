@@ -4,6 +4,7 @@ title: aPrep Tutors
 meta:
 - stack: Svelte, Firebase, Django, MySQL
 - tools: goDaddy, pythonAnywhere
+- published: June 28th, 2023
 link:
 - github: [https://github.com/redmac135/apreptutors, redmac135/apreptutors]
 ---

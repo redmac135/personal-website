@@ -3,6 +3,8 @@ layout: article
 title: Cadet Training App
 meta:
 - stack: Tailwindcss, Django, MySQL
+- tools: Figma, drawSQL
+- published: Oct 5th, 2023
 link:
 - github: [https://github.com/redmac135/banshee-training, redmac135/banshee-training]
 ---

@@ -2,7 +2,8 @@
 layout: article
 title: Mindful Reflection Journal
 meta:
-- Stack: Tailwindcss, Django, MySQL
+- stack: Tailwindcss, Django, MySQL
+- published: May 5th, 2022
 link:
 - github: [https://github.com/redmac135/mindful, redmac135/mindful]
 ---

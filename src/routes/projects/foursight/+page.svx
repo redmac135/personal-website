@@ -2,8 +2,8 @@
 layout: article
 title: Foursight
 meta: 
-- Stack: Django, MySQL
-- Domain: foursight.herokuapp.com
+- stack: Django, MySQL
+- published: July 8th, 2022
 link:
 - github: [https://github.com/redmac135/cwsf2022, redmac135/cwsf2022]
 ---
