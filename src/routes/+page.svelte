@@ -259,7 +259,8 @@
 	}
 
 	.about > div {
-		max-width: 60vh;
+		width: 85vw;
+		max-width: 30rem;
 	}
 
 	.about-title {
@@ -272,7 +273,9 @@
 	}
 
 	.intro-title > img {
-		max-width: calc(var(--window-width) * 0.95);
+		width: calc(var(--window-width) * 0.95);
+		max-width: 95vw;
+		max-height: 95vh;
 	}
 
 	#projects {
