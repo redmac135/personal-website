@@ -119,12 +119,13 @@
 								0
 							)}rem)"
 						>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet arcu
-							consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis
-							leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus
-							felis dapibus erat, vel congue mauris urna vel leo. Phasellus mauris massa, fringilla
-							vel lorem at, convallis convallis tellus. Sed pulvinar condimentum metus, vel interdum
-							nisl commodo quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Ethan is a passion driven Engineering student studying at Western University and
+							persuing a Software Engineering and Ivey HBA double degree. He's works with numerous
+							groups from science fair teams of 4 people to squadron wide applications serving over
+							200 people. With each project, Ethan expands his skillset, striving to learn new
+							skills each time while maintaining a high level of impact with each release. He hopes
+							he can continue his journey of growth and teamwork by working on larger and more
+							influential projects.
 						</p>
 					</div>
 				</div>
