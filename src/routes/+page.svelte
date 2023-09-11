@@ -220,7 +220,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100vh;
-		background-image: url('/images/room.png');
+		background-image: url('/images/room.webp');
 		background-position: 50% 50%;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -231,7 +231,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100vh;
-		background-image: url('/images/sunset.png');
+		background-image: url('/images/sunset.webp');
 		background-position: 50% 50%;
 		background-size: cover;
 		background-repeat: no-repeat;

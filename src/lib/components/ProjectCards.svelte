@@ -1,11 +1,11 @@
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
-	import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.png';
-	import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.png';
-	import foursightImg from '$lib/assets/projects/foursight/thumbnail.png';
-	import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.png';
-	import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.png';
-	import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.jpg';
+	import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.webp';
+	import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.webp';
+	import foursightImg from '$lib/assets/projects/foursight/thumbnail.webp';
+	import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.webp';
+	import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.webp';
+	import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.webp';
 
 	const projects = [
 		{

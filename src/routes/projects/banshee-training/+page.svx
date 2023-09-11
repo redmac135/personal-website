@@ -11,7 +11,7 @@ link:
 
 <script>
     import ArticleImage from '$lib/components/ArticleImage.svelte';
-    import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.jpg';
+    import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.webp';
 </script>
 
 <ArticleImage image={bansheeTrainingImg} imagealt="Screenshot of Banshee Training App Homepage"/>

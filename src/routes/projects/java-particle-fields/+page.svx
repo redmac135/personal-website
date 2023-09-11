@@ -10,7 +10,7 @@ link:
 
 <script>
     import ArticleImage from '$lib/components/ArticleImage.svelte';
-    import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.png';
+    import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.webp';
 </script>
 
 <ArticleImage image={javaparticlesImg} imagealt="Screenshot of Java Particle Image Animation"/>
