@@ -1,11 +1,11 @@
 <script lang="ts">
 	export let item: string;
-    export let link: [string, string];
+	export let link: [string, string];
 </script>
 
 <div class="meta">
 	<div class="item">{item}</div>
-	<a href="{link[0]}" target="_blank" rel="noopener" class="value">{link[1]}</a>
+	<a href={link[0]} target="_blank" rel="noopener" class="value">{link[1]}</a>
 </div>
 
 <style>
