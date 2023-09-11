@@ -20,7 +20,7 @@
 		}
 	}
 
-	function foreground_scale_factor() {
+	function foreground_scale_factor(): number {
 		let windowWidth;
 		let windowHeight;
 		if (innerWidth / innerHeight < IMAGE_RATIO) {
