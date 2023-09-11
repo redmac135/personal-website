@@ -8,4 +8,11 @@ link:
 - github: [https://github.com/redmac135/java-particle-fields, redmac135/java-particle-fields]
 ---
 
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.png';
+</script>
+
+<ArticleImage image={javaparticlesImg} imagealt="Screenshot of Java Particle Image Animation"/>
+
 Particle simulator capable for simulating a large number of particles and multiple force fields. Uses sub-steps to improve render time and accuracy. 

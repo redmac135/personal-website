@@ -1,11 +1,16 @@
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
+	import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.png';
+	import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.png';
+	import foursightImg from '$lib/assets/projects/fousight/thumbnail.png';
+	import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.png';
+	import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.png';
 	import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.jpg';
 
 	const projects = [
 		{
-			imagesrc: bansheeTrainingImg,
-			imagealt: 'Screenshot of Training App Website',
+			imagesrc: apreptutorsImg,
+			imagealt: '"Screenshot of aPrepTutors landing page',
 			title: 'aPrep Tutors',
 			url: 'apreptutors'
 		},
@@ -16,26 +21,26 @@
 			url: 'banshee-training'
 		},
 		{
-			imagesrc: bansheeTrainingImg,
-			imagealt: 'Screenshot of Training App Website',
+			imagesrc: personalWebsiteImg,
+			imagealt: 'Screenshot of Personal Website Homepage',
 			title: 'Personal Website',
 			url: 'personal-website'
 		},
 		{
-			imagesrc: bansheeTrainingImg,
-			imagealt: 'Screenshot of Training App Website',
+			imagesrc: foursightImg,
+			imagealt: 'Screenshot of AI cancer detection diagnosis from Foursight website',
 			title: 'AI Gene based Cancer Detection',
 			url: 'foursight'
 		},
 		{
-			imagesrc: bansheeTrainingImg,
-			imagealt: 'Screenshot of Training App Website',
+			imagesrc: mindfulReflectionsImg,
+			imagealt: 'Screenshot of Mindful Reflections Website',
 			title: 'Mindful Reflection Journal',
 			url: 'mindful-reflections'
 		},
 		{
-			imagesrc: bansheeTrainingImg,
-			imagealt: 'Screenshot of Training App Website',
+			imagesrc: javaparticlesImg,
+			imagealt: 'Screenshot of Java Particle Image Animation',
 			title: 'Java Particle Simulation',
 			url: 'java-particle-fields'
 		}

@@ -11,9 +11,9 @@ link:
 
 <script>
     import ArticleImage from '$lib/components/ArticleImage.svelte';
-    import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.jpg';
+    import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.jpg';
 </script>
 
-<ArticleImage image={bansheeTrainingImg} imagealt="Banshee Stuff"/>
+<ArticleImage image={apreptutorsImg} imagealt="Screenshot of aPrepTutors landing page"/>
 
 A website built for a tutoring company which allows for the user to instantly book a trial class and schedule twice weekly classes. Instructors fill in the subjects they are qualified to teach and the timeslots and locations they can teach in. Then, each possible student which inputs get location and subject gets every timeslot where there is a potential instructor returned to them. Uses a dynamic form to prevent selecting two separate instructors for twice weekly classes while still exposing as many available time slots as possible.

@@ -8,4 +8,11 @@ link:
 - github: [https://github.com/redmac135/mindful, redmac135/mindful]
 ---
 
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.png';
+</script>
+
+<ArticleImage image={mindfulReflectionsImg} imagealt="Screenshot of Mindful Reflections Website"/>
+
 Created as a project for a Highschool Mindful Club, this journaling app focuses on quick and easy journals with a few multiple choice questions and a easy daily mood tracker. Daily quotes are given to each user depending on their mood.
