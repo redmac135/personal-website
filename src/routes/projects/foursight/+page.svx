@@ -10,7 +10,7 @@ link:
 
 <script>
     import ArticleImage from '$lib/components/ArticleImage.svelte';
-    import foursightImg from '$lib/assets/projects/foursight/thumbnail.png';
+    import foursightImg from '$lib/assets/projects/foursight/thumbnail.webp';
 </script>
 
 <ArticleImage image={foursightImg} imagealt="Screenshot of AI cancer detection diagnosis from Foursight website"/>

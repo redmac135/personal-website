@@ -11,7 +11,7 @@ link:
 
 <script>
     import ArticleImage from '$lib/components/ArticleImage.svelte';
-    import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.png';
+    import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.webp';
 </script>
 
 <ArticleImage image={personalWebsiteImg} imagealt="Screenshot of Personal Website Homepage"/>

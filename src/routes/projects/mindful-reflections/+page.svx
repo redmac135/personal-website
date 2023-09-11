@@ -10,7 +10,7 @@ link:
 
 <script>
     import ArticleImage from '$lib/components/ArticleImage.svelte';
-    import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.png';
+    import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.webp';
 </script>
 
 <ArticleImage image={mindfulReflectionsImg} imagealt="Screenshot of Mindful Reflections Website"/>
