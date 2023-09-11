@@ -11,7 +11,7 @@ link:
 
 <script>
     import ArticleImage from '$lib/components/ArticleImage.svelte';
-    import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.jpg';
+    import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.png';
 </script>
 
 <ArticleImage image={apreptutorsImg} imagealt="Screenshot of aPrepTutors landing page"/>
