@@ -2,10 +2,18 @@
 layout: article
 title: Cadet Training App
 meta:
-- tools: Django/Python, MySQL
-- date: Summer of Grade 11
+- stack: Tailwindcss, Django, MySQL
+- tools: Figma, drawSQL
+- published: Oct 5th, 2023
+link:
+- github: [https://github.com/redmac135/banshee-training, redmac135/banshee-training]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet arcu consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus felis dapibus erat, vel congue mauris urna vel leo.
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.jpg';
+</script>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet arcu consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus felis dapibus erat, vel congue mauris urna vel leo.
+<ArticleImage image={bansheeTrainingImg} imagealt="Screenshot of Banshee Training App Homepage"/>
+
+Created for 778 Royal Canadian Air Cadets, this web app helps automatically assign training, track individual attendance and pass rate of each cadet. Also allows senior cadets to assign and notify instructors on which lessons to prepare for and when they will be teaching it. Has a dashboard for each user outlining where they need to be at all times. Saves over 8 hours of work every week for the training team.

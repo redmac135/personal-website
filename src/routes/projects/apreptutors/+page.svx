@@ -2,10 +2,18 @@
 layout: article
 title: aPrep Tutors
 meta:
-- tools: Svelte, Firebase, goDaddy
-- date: Summer before University
+- stack: Svelte, Firebase, Django, MySQL
+- tools: goDaddy, pythonAnywhere
+- published: June 28th, 2023
+link:
+- github: [https://github.com/redmac135/apreptutors, redmac135/apreptutors]
 ---
 
-After graduating from the IB program, me and three other graduates decided to	begin a tutoring firm targeted towards those persuing the same diploma that we had accomplished. This firm would connect IB graduates who are willing to share their experience, mistakes, advice, and knowledge with those currently in or about to enter the program.
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.jpg';
+</script>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet	arcu consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus felis dapibus erat, vel congue mauris urna vel leo.
+<ArticleImage image={apreptutorsImg} imagealt="Screenshot of aPrepTutors landing page"/>
+
+A website built for a tutoring company which allows for the user to instantly book a trial class and schedule twice weekly classes. Instructors fill in the subjects they are qualified to teach and the timeslots and locations they can teach in. Then, each possible student which inputs get location and subject gets every timeslot where there is a potential instructor returned to them. Uses a dynamic form to prevent selecting two separate instructors for twice weekly classes while still exposing as many available time slots as possible.

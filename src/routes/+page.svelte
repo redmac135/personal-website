@@ -20,7 +20,7 @@
 		}
 	}
 
-	function foreground_scale_factor() {
+	function foreground_scale_factor(): number {
 		let windowWidth;
 		let windowHeight;
 		if (innerWidth / innerHeight < IMAGE_RATIO) {
@@ -32,6 +32,14 @@
 		}
 
 		return max(innerWidth / windowWidth, innerHeight / windowHeight);
+	}
+
+	function calculate_window_width(innerWidth: number, innerHeight: number): number {
+		if (innerWidth / innerHeight < IMAGE_RATIO) {
+			return innerHeight * WINDOW_VERTICAL_RATIO * WINDOW_RATIO;
+		} else {
+			return innerWidth * WINDOW_HORIZONTAL_RATIO;
+		}
 	}
 
 	function interpolate(
@@ -82,7 +90,11 @@
 					class="centerer intro-title"
 					style:opacity={interpolate(y, 0, 0.5 * innerHeight, 1, 0)}
 				>
-					<img src={imgtitle} alt="The life of Ethan Zhao" />
+					<img
+						src={imgtitle}
+						style="--window-width: {calculate_window_width(innerWidth, innerHeight)}px"
+						alt="The life of Ethan Zhao"
+					/>
 				</div>
 				<div
 					class="centerer about"
@@ -107,12 +119,13 @@
 								0
 							)}rem)"
 						>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tortor sit amet arcu
-							consequat scelerisque condimentum eget lacus. Duis quis ultrices ligula. Integer quis
-							leo eu quam facilisis venenatis. Vivamus dictum, diam non convallis tincidunt, lacus
-							felis dapibus erat, vel congue mauris urna vel leo. Phasellus mauris massa, fringilla
-							vel lorem at, convallis convallis tellus. Sed pulvinar condimentum metus, vel interdum
-							nisl commodo quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Ethan is a passion driven Engineering student studying at Western University and
+							persuing a Software Engineering and Ivey HBA double degree. He's works with numerous
+							groups from science fair teams of 4 people to squadron wide applications serving over
+							200 people. With each project, Ethan expands his skillset, striving to learn new
+							skills each time while maintaining a high level of impact with each release. He hopes
+							he can continue his journey of growth and teamwork by working on larger and more
+							influential projects.
 						</p>
 					</div>
 				</div>
@@ -247,7 +260,8 @@
 	}
 
 	.about > div {
-		max-width: 60vh;
+		width: 85vw;
+		max-width: 30rem;
 	}
 
 	.about-title {
@@ -260,11 +274,14 @@
 	}
 
 	.intro-title > img {
-		max-width: 60vh;
+		width: calc(var(--window-width) * 0.95);
+		max-width: 95vw;
+		max-height: 95vh;
 	}
 
 	#projects {
 		display: flex;
+		padding-top: 3rem;
 		flex-direction: column;
 		justify-content: center;
 		z-index: 3;

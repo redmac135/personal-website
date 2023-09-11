@@ -1,4 +1,18 @@
 ---
 layout: article
 title: Foursight
+meta: 
+- stack: Django, MySQL
+- published: July 8th, 2022
+link:
+- github: [https://github.com/redmac135/cwsf2022, redmac135/cwsf2022]
 ---
+
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import foursightImg from '$lib/assets/projects/foursight/thumbnail.jpg';
+</script>
+
+<ArticleImage image={foursightImg} imagealt="Screenshot of AI cancer detection diagnosis from Foursight website"/>
+
+Foursight is a AI early cancer detection tool which began as a high school science fair project and quickly grew in popularity. Through various science fairs, the project amassed $7,500 in funding. This tool is publicly accessible and hosting on the web.
