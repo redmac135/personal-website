@@ -68,6 +68,7 @@
 	<!-- TODO: make animation more 3d like -->
 	<!-- TODO: move images into svelte import statements -->
 	<main>
+		<!-- home opacity animation is redundant -->
 		<div id="home" style:opacity={y < 3 * innerHeight ? 1 : 0}>
 			<div class="sticky-container">
 				<div id="scroll-icon" style:opacity={y < 2 * innerHeight ? 1 : 0}><span /></div>
@@ -85,6 +86,7 @@
 						foreground_scale_factor()
 					)},
 					{interpolate(y, 0, 1 * innerHeight, 1, foreground_scale_factor())}, 1)"
+					style:opacity={y < 1.8 * innerHeight ? 1 : 0}
 				/>
 				<div
 					class="centerer intro-title"
@@ -139,6 +141,7 @@
 						(foreground_scale_factor() - 1) / 2 + 1
 					)},
 					{interpolate(y, 0, 1 * innerHeight, 1, (foreground_scale_factor() - 1) / 2 + 1)}, 1)"
+					style:opacity={y < 1.8 * innerHeight ? 1 : 0}
 				/>
 			</div>
 		</div>
