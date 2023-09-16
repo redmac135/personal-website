@@ -31,6 +31,16 @@
 		font-size: 0.9rem;
 	}
 
+	.value {
+		font-size: 1rem;
+	}
+
+	@media (min-width: 500px) {
+		.value {
+			font-size: 1.5rem;
+		}
+	}
+
 	@media (min-width: 900px) {
 		.meta {
 			margin-left: 2rem;
