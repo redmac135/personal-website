@@ -11,6 +11,7 @@
 	const WINDOW_RATIO = 828 / 500;
 	const WINDOW_HORIZONTAL_RATIO = 828 / 1920;
 	const WINDOW_VERTICAL_RATIO = 500 / 1080;
+	const RESUME_LINK_NAME = '/ethan_zhao_2023.pdf';
 
 	function max(x: number, y: number) {
 		if (x > y) {
@@ -129,6 +130,20 @@
 							he can continue his journey of growth and teamwork by working on larger and more
 							influential projects.
 						</p>
+						<a
+							href={RESUME_LINK_NAME}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="button"
+							style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
+							style:transform="translateY({interpolate(
+								y,
+								0.6 * innerHeight,
+								0.9 * innerHeight,
+								10,
+								0
+							)}rem)">Resume</a
+						>
 					</div>
 				</div>
 				<div
@@ -183,6 +198,40 @@
 		box-sizing: border-box;
 		z-index: 4;
 	}
+
+	.button {
+		--color: hsl(208, 70%, 40%);
+		display: inline-block;
+		cursor: pointer;
+		text-decoration: none;
+		border: 3px solid var(--color);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 0.25rem;
+		margin-top: 1rem;
+
+		position: relative;
+		isolation: isolate;
+	}
+
+	.button::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		background: var(--color);
+		inset: 0;
+
+		scale: 0 1;
+		transform-origin: right;
+		transition: scale 450ms;
+	}
+
+	.button:hover::after,
+	.button:focus-visible::after {
+		transform-origin: left;
+		scale: 1 1;
+	}
+
 	@-webkit-keyframes scrollanimation {
 		0% {
 			-webkit-transform: rotate(-45deg) translate(0, 0);
