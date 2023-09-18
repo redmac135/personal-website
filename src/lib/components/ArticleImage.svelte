@@ -15,7 +15,7 @@
 
 	.image {
 		display: block;
-		max-width: 90%;
+		max-width: 100%;
 		height: auto;
 		border-radius: 0.25rem;
 		margin-bottom: 1.5rem;

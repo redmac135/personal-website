@@ -15,6 +15,7 @@
 		align-items: center;
 		margin-left: 1rem;
 		margin-bottom: 0.4rem;
+		white-space: nowrap;
 	}
 
 	.item {
@@ -30,6 +31,16 @@
 		text-transform: uppercase;
 		font-weight: 600;
 		font-size: 0.9rem;
+	}
+
+	a {
+		font-size: 1rem;
+	}
+
+	@media (min-width: 500px) {
+		a {
+			font-size: 1.25rem;
+		}
 	}
 
 	@media (min-width: 900px) {
