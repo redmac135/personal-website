@@ -65,6 +65,12 @@
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
 
+<svelte:head>
+	<meta name="title" content="Ethan Zhao">
+	<meta name="description" content="A personal portfoilo website coded by Ethan Zhao which showcases his past projects.">
+	<title>Ethan Zhao</title>
+</svelte:head>
+
 <PageTransition animateOut={false}>
 	<!-- TODO: make animation more 3d like -->
 	<!-- TODO: move images into svelte import statements -->

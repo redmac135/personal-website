@@ -2,6 +2,7 @@
 <script lang="ts">
 	// adding string type causes dev server to crash, issue on mdsvex
 	export let title;
+	export let description = '';
 	export let meta = [];
 	export let link = [];
 
@@ -9,6 +10,11 @@
 </script>
 
 <svelte:head>
+	<meta name="title" content="{title} Project" />
+	{#if !!description}
+		<meta name="description" content={description} />
+	{/if}
+	<meta name="author" content="Ethan Zhao" />
 	<title>{title}</title>
 </svelte:head>
 
