@@ -11,7 +11,14 @@
 	const WINDOW_RATIO = 828 / 500;
 	const WINDOW_HORIZONTAL_RATIO = 828 / 1920;
 	const WINDOW_VERTICAL_RATIO = 500 / 1080;
-	const RESUME_LINK_NAME = '/ethan_zhao_2023.pdf';
+
+	const SOCIAL_LINKS = {
+		RESUME: '/ethan_zhao_2023.pdf',
+		EMAIL: 'ethanzhao1981@gmail.com',
+		PHONE: '6475224188',
+		GITHUB: 'https://github.com/redmac135',
+		LINKEDIN: 'https://www.linkedin.com/in/ethan-zhao-731a821b7/'
+	};
 
 	function max(x: number, y: number) {
 		if (x > y) {
@@ -130,11 +137,8 @@
 							he can continue his journey of growth and teamwork by working on larger and more
 							influential projects.
 						</p>
-						<a
-							href={RESUME_LINK_NAME}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="button"
+						<div
+							class="social-container"
 							style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
 							style:transform="translateY({interpolate(
 								y,
@@ -142,8 +146,12 @@
 								0.9 * innerHeight,
 								10,
 								0
-							)}rem)">Resume</a
+							)}rem)"
 						>
+							<a href={SOCIAL_LINKS.RESUME} target="_blank" rel="noopener noreferrer" class="button"
+								>Resume</a
+							>
+						</div>
 					</div>
 				</div>
 				<div
@@ -199,16 +207,21 @@
 		z-index: 4;
 	}
 
-	.button {
+	/* Social Icon Manager */
+	.social-container {
 		--color: hsl(208, 70%, 40%);
 		display: inline-block;
-		cursor: pointer;
 		text-decoration: none;
-		border: 3px solid var(--color);
+		margin-top: 1rem;
 		color: white;
+	}
+
+	.button {
+		display: inline-block;
+		cursor: pointer;
+		border: 3px solid var(--color);
 		padding: 0.5rem 1rem;
 		border-radius: 0.25rem;
-		margin-top: 1rem;
 
 		position: relative;
 		isolation: isolate;
