@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Java Particle Simulation
+description: A particle simulation which uses Euler's method and substeps to accurately simulate the interactions between many force fields and particles.
 meta:
 - program: Java
 - published: March 16th, 2023
