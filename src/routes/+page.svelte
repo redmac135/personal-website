@@ -194,7 +194,7 @@
 		left: 50%;
 		width: 50px;
 		height: 50px;
-		margin-left: -12px;
+		margin-left: -25px;
 		border-left: 1px solid #fff;
 		border-bottom: 1px solid #fff;
 		-webkit-transform: rotate(-45deg);
