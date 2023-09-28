@@ -221,16 +221,30 @@
 									rel="noopener noreferrer"
 									class="social-button"
 									style="--color: #0072b1"
-									><svg
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 30 30"
-										height="1em"
-										fill="white"
-									>
-										<path
-											d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"
-										/></svg
-									></a
+									><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+										<g
+											id="Page-1"
+											stroke="none"
+											stroke-width="1"
+											fill="white"
+											fill-rule="evenodd"
+											transform="matrix(24.839662551879883, 0, 0, 24.663854598999023, 1.2517800331115723, 5.822782039642334)"
+											style=""
+										>
+											<g
+												id="Dribbble-Light-Preview"
+												transform="translate(-180.000000, -7479.000000)"
+												fill="white"
+											>
+												<g id="icons" transform="translate(56.000000, 160.000000)">
+													<path
+														d="M144,7339 L140,7339 L140,7332.001 C140,7330.081 139.153,7329.01 137.634,7329.01 C135.981,7329.01 135,7330.126 135,7332.001 L135,7339 L131,7339 L131,7326 L135,7326 L135,7327.462 C135,7327.462 136.255,7325.26 139.083,7325.26 C141.912,7325.26 144,7326.986 144,7330.558 L144,7339 L144,7339 Z M126.442,7323.921 C125.093,7323.921 124,7322.819 124,7321.46 C124,7320.102 125.093,7319 126.442,7319 C127.79,7319 128.883,7320.102 128.883,7321.46 C128.884,7322.819 127.79,7323.921 126.442,7323.921 L126.442,7323.921 Z M124,7339 L129,7339 L129,7326 L124,7326 L124,7339 Z"
+														id="linkedin-[#161]"
+													/>
+												</g>
+											</g>
+										</g>
+									</svg></a
 								>
 							</div>
 							<!-- for wide screen -->
@@ -304,15 +318,30 @@
 		color: white;
 	}
 
+	.social-links {
+		display: flex;
+		gap: 0.4rem;
+		align-items: center;
+	}
+
 	.social-button {
-		padding: 0.5rem;
 		display: inline-block;
+		width: 2.5rem;
+		height: 2.5rem;
+		padding: 0.5rem;
 		cursor: pointer;
 		border: 3px solid var(--color);
 		border-radius: 0.25rem;
 		background-color: transparent;
 		transition: background-color 250ms;
-		margin-bottom: 0.5rem;
+
+		position: relative;
+		isolation: isolate;
+	}
+
+	.social-button > svg {
+		width: 100%;
+		height: 100%;
 	}
 
 	.social-button:hover,
@@ -322,6 +351,7 @@
 
 	.fancy-button {
 		--color: hsl(213, 38%, 22%);
+		height: 2.5rem;
 		padding: 0.5rem 1rem;
 		display: inline-block;
 		cursor: pointer;
@@ -461,6 +491,10 @@
 		display: none;
 	}
 
+	.social-button {
+		margin-bottom: 0.5rem;
+	}
+
 	@media (min-width: 600px) {
 		.wide-screen {
 			display: inline-block;
@@ -468,6 +502,10 @@
 
 		.small-screen {
 			display: none;
+		}
+
+		.social-button {
+			margin-bottom: 0;
 		}
 	}
 </style>
