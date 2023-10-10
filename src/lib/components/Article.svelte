@@ -5,15 +5,23 @@
 
 <main class="markdown-body">
 	<div class="centerer">
+		<nav><a href="/?scrollto=projects">&lt; Projects</a></nav>
 		<slot {Header} />
 	</div>
 </main>
 
 <style>
 	main {
-		padding-top: 5rem;
+		padding-top: 4rem;
 		min-width: 100%;
 		min-height: 100%;
+	}
+
+	nav {
+		position: absolute;
+		top: 1rem;
+		display: flex;
+		justify-content: left;
 	}
 
 	.centerer {

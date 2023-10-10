@@ -3,6 +3,8 @@
 	import imgtitle from '$lib/assets/homepage/text-thelifeofethanzhao.png';
 	import Title from '$lib/components/Title.svelte';
 	import PageTransition from '$lib/components/PageTransition.svelte';
+	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 	import '$lib/assets/css/fontawesome.min.css';
 
 	let y = 0;
@@ -69,6 +71,23 @@
 			return endValue;
 		}
 	}
+
+	function scrollToTarget() {
+		const scrollto: string | null = $page.url.searchParams.get('scrollto');
+		if (!scrollto) return;
+		const el: HTMLElement | null = document.getElementById(scrollto);
+		if (!el) return;
+		// TODO: Find a way to do this without setTimeout
+		setTimeout(() => {
+			el.scrollIntoView({
+				behavior: 'smooth'
+			});
+		}, 500);
+	}
+
+	onMount(() => {
+		scrollToTarget();
+	});
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
@@ -257,6 +276,8 @@
 						</div>
 					</div>
 				</div>
+				<!-- id used for auto scrolling -->
+				<div id="about" style="position: absolute; top: {1.8 * innerHeight}px;" />
 				<div
 					id="background-image"
 					style:transform="scale3d({interpolate(
