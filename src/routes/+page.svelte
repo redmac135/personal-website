@@ -146,6 +146,8 @@
 						>
 					</div>
 				</div>
+				<!-- id used for auto scrolling -->
+				<div id="about" style="position: absolute; top: {1.8 * innerHeight}px;" />
 				<div
 					id="background-image"
 					style:transform="scale3d({interpolate(
