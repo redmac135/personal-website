@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Foursight
+description: An early cancer detection AI which began as a high school science fair project and quickly grew to a large publically accessible and 95% accurate cancer detector.
 meta: 
 - stack: Django, MySQL
 - published: July 8th, 2022
