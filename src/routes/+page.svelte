@@ -3,6 +3,8 @@
 	import imgtitle from '$lib/assets/homepage/text-thelifeofethanzhao.png';
 	import Title from '$lib/components/Title.svelte';
 	import PageTransition from '$lib/components/PageTransition.svelte';
+	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 
 	let y = 0;
 	let innerHeight: number;
@@ -61,6 +63,23 @@
 			return endValue;
 		}
 	}
+
+	function scrollToTarget() {
+		const scrollto: string | null = $page.url.searchParams.get('scrollto');
+		if (!scrollto) return;
+		const el: HTMLElement | null = document.getElementById(scrollto);
+		if (!el) return;
+		// TODO: Find a way to do this without setTimeout
+		setTimeout(() => {
+			el.scrollIntoView({
+				behavior: 'smooth'
+			});
+		}, 500);
+	}
+
+	onMount(() => {
+		scrollToTarget();
+	});
 </script>
 
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
