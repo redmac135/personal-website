@@ -6,6 +6,7 @@
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	import '$lib/assets/css/fontawesome.min.css';
+	import { SOCIAL_LINKS } from '../info';
 
 	let y = 0;
 	let innerHeight: number;
@@ -14,14 +15,6 @@
 	const WINDOW_RATIO = 828 / 500;
 	const WINDOW_HORIZONTAL_RATIO = 828 / 1920;
 	const WINDOW_VERTICAL_RATIO = 500 / 1080;
-
-	const SOCIAL_LINKS = {
-		RESUME: '/ethan_zhao_2023.pdf',
-		EMAIL: 'ethanzhao1981@gmail.com',
-		PHONE: '6475224188',
-		GITHUB: 'https://github.com/redmac135',
-		LINKEDIN: 'https://www.linkedin.com/in/ethan-zhao-731a821b7/'
-	};
 
 	function max(x: number, y: number) {
 		if (x > y) {
