@@ -126,6 +126,10 @@
 		footer {
 			flex-direction: row;
 		}
+
+		.left {
+			width: 40%;
+		}
 	}
 
 	@media (min-width: 900px) {
