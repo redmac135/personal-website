@@ -1,11 +1,12 @@
 // A place for all personal settings
 export const SOCIAL_LINKS = {
-	RESUME: '/ethan_zhao_2023.pdf',
-	EMAIL: 'ethanzhao1981@gmail.com',
-	PHONE: '6475224188',
+	EMAIL: 'mailto:ethanzhao1981@gmail.com',
+	PHONE: 'tel:6475224188',
 	GITHUB: 'https://github.com/redmac135',
 	LINKEDIN: 'https://www.linkedin.com/in/ethan-zhao-731a821b7/'
 };
+
+export const RESUME_LINK = '/ethan_zhao_2023.pdf';
 
 import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.webp';
 import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.webp';

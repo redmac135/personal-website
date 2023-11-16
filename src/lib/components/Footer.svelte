@@ -1,21 +1,170 @@
 <script lang="ts">
 	import { PROJECTS_LIST as projects } from '../../info';
+	import logo from '$lib/assets/whitelogo.png';
+	import { SOCIAL_LINKS } from '../../info';
+
+	const socials = Object.entries(SOCIAL_LINKS);
 </script>
 
 <footer>
-	<div class="title">
+	<div class="left">
 		<!-- TODO: add dyanmically changing logo -->
-		<div class="logo" />
+		<img src={logo} alt="White Logo" />
 		<div class="text">Ethan Zhao</div>
 	</div>
-	<ul class="section">
-		<h2>Projects</h2>
-		{#each projects as project}
-			<a href={project.url}>{project.title}</a>
-		{/each}
-	</ul>
-	<ul class="section">
-		<h2>Socials</h2>
-		<!-- TODO: add socials here -->
-	</ul>
+	<div class="right">
+		<ul>
+			<h2>Projects</h2>
+			<div class="body">
+				{#each projects as project}
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="/projects/{project.url}"
+							>{project.title}</a
+						>
+					</li>
+				{/each}
+			</div>
+		</ul>
+		<ul>
+			<h2>Pages</h2>
+			<div class="body">
+				<li>
+					<a target="_blank" rel="noopener noreferrer" href="/">Home</a>
+				</li>
+				<li>
+					<a target="_blank" rel="noopener noreferrer" href="/projects">Projects</a>
+				</li>
+			</div>
+		</ul>
+		<ul>
+			<h2>Socials</h2>
+			<div class="body">
+				{#each socials as social}
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href={social[1]}
+							>{social[0].toLocaleLowerCase()}</a
+						>
+					</li>
+				{/each}
+			</div>
+		</ul>
+	</div>
 </footer>
+
+<style>
+	footer {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 65vh;
+		margin-top: 4vh;
+		border-top: 1px lightgray solid;
+	}
+
+	.left {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		flex-direction: column;
+		padding: 2vw 0 2vw 2vw;
+	}
+
+	.left > img {
+		position: relative;
+		width: 6rem;
+	}
+
+	.left > .text {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+
+	.right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		padding-top: 1rem;
+	}
+
+	ul {
+		position: relative;
+		display: flex;
+		list-style-type: none;
+		margin-bottom: 1.5rem;
+	}
+
+	ul > h2 {
+		width: 9rem;
+	}
+
+	.body {
+		width: 9rem;
+	}
+
+	.body > li {
+		padding-bottom: 0.75rem;
+	}
+
+	h2 {
+		color: grey;
+		font-family: 'Courier New', Courier, monospace;
+		font-size: medium;
+	}
+
+	a {
+		text-transform: capitalize;
+		margin-left: 0;
+		transition: margin-left 200ms;
+	}
+
+	a:hover {
+		margin-left: 1rem;
+	}
+
+	@media (min-width: 700px) {
+		footer {
+			flex-direction: row;
+		}
+	}
+
+	@media (min-width: 900px) {
+		.left {
+			display: block;
+			width: 35vw;
+			border-right: 1px lightgray solid;
+		}
+
+		.left > img {
+			position: absolute;
+			top: 2rem;
+			left: 1rem;
+		}
+
+		.left > .text {
+			padding-top: 20vh;
+		}
+
+		.right {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			align-items: baseline;
+		}
+
+		ul {
+			display: block;
+			padding-left: 2rem;
+		}
+
+		ul > h2 {
+			position: absolute;
+		}
+
+		.body {
+			width: 100%;
+			padding-top: 22vh;
+		}
+	}
+</style>
