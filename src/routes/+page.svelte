@@ -6,7 +6,7 @@
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	import '$lib/assets/css/fontawesome.min.css';
-	import { SOCIAL_LINKS } from '../info';
+	import { SOCIAL_LINKS, RESUME_LINK } from '../info';
 
 	let y = 0;
 	let innerHeight: number;
@@ -173,7 +173,7 @@
 						>
 							<div class="social-links">
 								<a
-									href="mailto:ethanzhao1981@gmail.com"
+									href={SOCIAL_LINKS.EMAIL}
 									target="_blank"
 									rel="noopener noreferrer"
 									class="social-button"
@@ -189,7 +189,7 @@
 									></a
 								>
 								<a
-									href="https://github.com/redmac135"
+									href={SOCIAL_LINKS.GITHUB}
 									target="_blank"
 									rel="noopener noreferrer"
 									class="social-button"
@@ -206,13 +206,13 @@
 								>
 								<!-- for small screen -->
 								<a
-									href={SOCIAL_LINKS.RESUME}
+									href={RESUME_LINK}
 									target="_blank"
 									rel="noopener noreferrer"
 									class="wide-screen fancy-button">Resume</a
 								>
 								<a
-									href="tel:6475224188"
+									href={SOCIAL_LINKS.PHONE}
 									target="_blank"
 									rel="noopener noreferrer"
 									class="social-button"
@@ -228,7 +228,7 @@
 									></a
 								>
 								<a
-									href="https://www.linkedin.com/in/ethan-zhao-731a821b7/"
+									href={SOCIAL_LINKS.LINKEDIN}
 									target="_blank"
 									rel="noopener noreferrer"
 									class="social-button"
@@ -261,7 +261,7 @@
 							</div>
 							<!-- for wide screen -->
 							<a
-								href={SOCIAL_LINKS.RESUME}
+								href={RESUME_LINK}
 								target="_blank"
 								rel="noopener noreferrer"
 								class="small-screen fancy-button">Resume</a
