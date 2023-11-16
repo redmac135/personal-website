@@ -53,7 +53,7 @@
 	footer {
 		display: flex;
 		flex-direction: column;
-		width: 100vw;
+		width: 100%;
 		height: 65vh;
 		margin-top: 4vh;
 		border-top: 1px lightgray solid;
