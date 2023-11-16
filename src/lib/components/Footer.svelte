@@ -54,8 +54,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		min-height: 65vh;
-		margin-top: 4vh;
+		margin-top: 2rem;
 		border-top: 1px lightgray solid;
 	}
 
@@ -66,7 +65,7 @@
 		align-items: center;
 		width: 100%;
 		flex-direction: column;
-		padding: 2vw 0 4rem 2vw;
+		padding: 1.5rem 0 2rem 1.5rem;
 	}
 
 	.left > img {
