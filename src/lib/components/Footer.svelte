@@ -54,7 +54,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		height: 65vh;
+		min-height: 65vh;
 		margin-top: 4vh;
 		border-top: 1px lightgray solid;
 	}
@@ -66,7 +66,7 @@
 		align-items: center;
 		width: 100%;
 		flex-direction: column;
-		padding: 2vw 0 2vw 2vw;
+		padding: 2vw 0 4rem 2vw;
 	}
 
 	.left > img {
@@ -126,12 +126,16 @@
 		footer {
 			flex-direction: row;
 		}
+
+		.left {
+			width: 40%;
+		}
 	}
 
 	@media (min-width: 900px) {
 		.left {
 			display: block;
-			width: 35vw;
+			width: 20rem;
 			border-right: 1px lightgray solid;
 		}
 
@@ -142,7 +146,7 @@
 		}
 
 		.left > .text {
-			padding-top: 20vh;
+			padding-top: 10rem;
 		}
 
 		.right {
@@ -162,7 +166,7 @@
 
 		.body {
 			width: 100%;
-			padding-top: 22vh;
+			padding-top: 11rem;
 		}
 	}
 </style>
