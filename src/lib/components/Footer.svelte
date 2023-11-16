@@ -18,9 +18,7 @@
 			<div class="body">
 				{#each projects as project}
 					<li>
-						<a target="_blank" rel="noopener noreferrer" href="/projects/{project.url}"
-							>{project.title}</a
-						>
+						<a href="/projects/{project.url}">{project.title}</a>
 					</li>
 				{/each}
 			</div>
@@ -29,10 +27,10 @@
 			<h2>Pages</h2>
 			<div class="body">
 				<li>
-					<a target="_blank" rel="noopener noreferrer" href="/">Home</a>
+					<a href="/">Home</a>
 				</li>
 				<li>
-					<a target="_blank" rel="noopener noreferrer" href="/projects">Projects</a>
+					<a href="/projects">Projects</a>
 				</li>
 			</div>
 		</ul>
