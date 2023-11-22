@@ -54,7 +54,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		margin-top: 2rem;
+		margin-top: 5rem;
 		border-top: 1px lightgray solid;
 	}
 
@@ -71,6 +71,7 @@
 	.left > img {
 		position: relative;
 		width: 6rem;
+		padding-bottom: 1.5rem;
 	}
 
 	.left > .text {
@@ -132,6 +133,10 @@
 	}
 
 	@media (min-width: 900px) {
+		.left > img {
+			width: 4rem;
+		}
+
 		.left {
 			display: block;
 			width: 20rem;
@@ -140,12 +145,12 @@
 
 		.left > img {
 			position: absolute;
-			top: 2rem;
+			top: 1rem;
 			left: 1rem;
 		}
 
 		.left > .text {
-			padding-top: 10rem;
+			padding-top: 7rem;
 		}
 
 		.right {
@@ -159,13 +164,9 @@
 			padding-left: 2rem;
 		}
 
-		ul > h2 {
-			position: absolute;
-		}
-
 		.body {
 			width: 100%;
-			padding-top: 11rem;
+			padding-top: 1.2rem;
 		}
 	}
 </style>
