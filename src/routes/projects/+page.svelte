@@ -1,6 +1,12 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { pageData } from '$lib/stores';
 	import ProjectCards from '$lib/components/ProjectCards.svelte';
 	import Title from '$lib/components/Title.svelte';
+
+	onMount(() => {
+		pageData.set({ background: 'black' });
+	});
 </script>
 
 <svelte:head>

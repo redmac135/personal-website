@@ -4,9 +4,10 @@
 	import { SOCIAL_LINKS } from '../../info';
 
 	const socials = Object.entries(SOCIAL_LINKS);
+	export let background: string;
 </script>
 
-<footer>
+<footer style:background>
 	<div class="left">
 		<!-- TODO: add dyanmically changing logo -->
 		<img src={logo} alt="White Logo" />
@@ -54,7 +55,6 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		margin-top: 5rem;
 		border-top: 1px lightgray solid;
 	}
 

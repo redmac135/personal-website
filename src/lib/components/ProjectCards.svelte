@@ -18,6 +18,7 @@
 		justify-content: center;
 		margin-left: 2rem;
 		margin-right: 2rem;
+		margin-bottom: 5rem;
 	}
 
 	@media (min-width: 900px) {
