@@ -7,6 +7,7 @@
 	import { page } from '$app/stores';
 	import '$lib/assets/css/fontawesome.min.css';
 	import { SOCIAL_LINKS, RESUME_LINK } from '../info';
+	import { pageData } from '$lib/stores';
 
 	let y = 0;
 	let innerHeight: number;
@@ -80,6 +81,7 @@
 
 	onMount(() => {
 		scrollToTarget();
+		pageData.set({ background: 'black' });
 	});
 </script>
 

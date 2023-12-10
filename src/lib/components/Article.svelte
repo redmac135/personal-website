@@ -1,6 +1,12 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+	import { pageData } from '$lib/stores';
 	import './github-markdown-dark.css';
 	import Header from './ArticleHeader.svelte';
+
+	onMount(() => {
+		pageData.set({ background: '#0d1117' });
+	});
 </script>
 
 <main class="markdown-body">
