@@ -1,6 +1,7 @@
 ---
 layout: article
 title: aPrep Tutors
+description: A tutoring company which acts as a middle-man between people who would like a tutor and tutors who are looking for students. The website automatically calculates when instructors are free for a given user expectation.
 meta:
 - stack: Svelte, Firebase, Django, MySQL
 - tools: goDaddy, pythonAnywhere

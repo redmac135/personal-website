@@ -1,50 +1,6 @@
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
-	import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.webp';
-	import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.webp';
-	import foursightImg from '$lib/assets/projects/foursight/thumbnail.webp';
-	import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.webp';
-	import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.webp';
-	import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.webp';
-
-	const projects = [
-		{
-			imagesrc: apreptutorsImg,
-			imagealt: '"Screenshot of aPrepTutors landing page',
-			title: 'aPrep Tutors',
-			url: 'apreptutors'
-		},
-		{
-			imagesrc: bansheeTrainingImg,
-			imagealt: 'Screenshot of Training App Website',
-			title: 'Cadet Training App',
-			url: 'banshee-training'
-		},
-		{
-			imagesrc: personalWebsiteImg,
-			imagealt: 'Screenshot of Personal Website Homepage',
-			title: 'Personal Website',
-			url: 'personal-website'
-		},
-		{
-			imagesrc: foursightImg,
-			imagealt: 'Screenshot of AI cancer detection diagnosis from Foursight website',
-			title: 'AI Gene based Cancer Detection',
-			url: 'foursight'
-		},
-		{
-			imagesrc: mindfulReflectionsImg,
-			imagealt: 'Screenshot of Mindful Reflections Website',
-			title: 'Mindful Reflection Journal',
-			url: 'mindful-reflections'
-		},
-		{
-			imagesrc: javaparticlesImg,
-			imagealt: 'Screenshot of Java Particle Image Animation',
-			title: 'Java Particle Simulation',
-			url: 'java-particle-fields'
-		}
-	];
+	import { PROJECTS_LIST as projects } from '../../info';
 </script>
 
 <div class="card-wrapper">
@@ -62,6 +18,7 @@
 		justify-content: center;
 		margin-left: 2rem;
 		margin-right: 2rem;
+		margin-bottom: 5rem;
 	}
 
 	@media (min-width: 900px) {
