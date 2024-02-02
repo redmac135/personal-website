@@ -155,12 +155,12 @@
 							)}rem)"
 						>
 							Ethan is a passion driven Engineering student studying at Western University and
-							pursuing a Software Engineering and Ivey HBA double degree. He's works with numerous
-							groups from science fair teams of 4 people to squadron wide applications serving over
-							200 people. With each project, Ethan expands his skillset, striving to learn new
-							skills each time while maintaining a high level of impact with each release. He hopes
-							he can continue his journey of growth and teamwork by working on larger and more
-							influential projects.
+							pursuing a Software Engineering and Ivey HBA double degree. He has worked with
+							numerous groups from science fair teams of 4 people to squadron wide applications
+							serving over 200 people. With each project, Ethan expands his skillset, striving to
+							learn new skills each time while maintaining a high level of impact with each release.
+							He hopes he can continue his journey of growth and teamwork by working on larger and
+							more influential projects.
 						</p>
 						<div
 							class="about-links-container"
