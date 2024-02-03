@@ -1,0 +1,11 @@
+---
+layout: article
+title: Echo
+description: A reminiscence therapy assistant app that uses active recall and emotional analysis to create individual experiences.
+meta:
+- stack: Nextjs, Vercel, PostgreSQL, Cloudinary
+- tools: Figma, drawSQL, Nume AI, Web Sockets
+- published: February 2nd, 2024 
+link:
+- github: [https://github.com/redmac135/memory-echo, redmac135/memory-echo]
+---
