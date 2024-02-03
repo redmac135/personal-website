@@ -1,0 +1,21 @@
+---
+layout: article
+title: Robert's Rules Helper
+description: An app which automates the implementation of Robert's rules for councils by using inter-user state management.
+meta:
+- stack: SvelteKit, Docker, REST API
+- tools: Figma, drawSQL, Web Sockets, Ocean VPS
+- published: Feb 3rd, 2023
+link:
+- github: [https://github.com/redmac135/roberts-rules-helper, redmac135/roberts-rules-helper]
+- live: [https://rrh.apps.ethanzhao.me/, rrh.apps.ethanzhao.me]
+---
+
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import rrhImg from '$lib/assets/projects/roberts-rules-helper/thumbnail.webp';
+</script>
+
+<ArticleImage image={rrhImg} imagealt="Screenshot of Roberts Rules Helper App Homepage"/>
+
+During my time in the Undergrade Engineering Society at Western University, I noticed that the speaker--situated in the middle of the room--had a hard time seeing everyone at once. Moreover, his dilemma both caused him stress while trying to track speaking order, but also created a disadvantage to half the room who was chosen to speak less. The Robert's Rules Helper app runs on the principle of Server-side events and uses EventStreams to create an efficient and reliable connection between council members and the server. This allows any council member to declare their intent to speak without having the speaker be unable to see them. In addition, the application also handles race conditions, poor connection, and occasional connection drops. Further down the line, voting and proxy tracking will be added to the app to allow for statistics to be generated for each council member. This will eventually allow engineers to easily see what their representative is voting for and how frequently they are present at meetings. The Robert's Rules Helper app is now used in every council meeting and has officially replaced the outdated hand signals that were used years prior. 
