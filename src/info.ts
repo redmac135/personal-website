@@ -6,7 +6,7 @@ export const SOCIAL_LINKS = {
 	LINKEDIN: 'https://www.linkedin.com/in/ethan-zhao-731a821b7/'
 };
 
-export const RESUME_LINK = '/ethan_zhao_2023.pdf';
+export const RESUME_LINK = '/zhao_ethan_resume.pdf';
 
 import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.webp';
 import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.webp';
@@ -14,8 +14,15 @@ import foursightImg from '$lib/assets/projects/foursight/thumbnail.webp';
 import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.webp';
 import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.webp';
 import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.webp';
+import rrhImg from '$lib/assets/projects/roberts-rules-helper/thumbnail.webp';
 
 export const PROJECTS_LIST = [
+	{
+		imagesrc: rrhImg,
+		imagealt: 'Screenshot of Roberts Rules Helper Website',
+		title: 'Roberts Rules Helper',
+		url: 'roberts-rules-helper'
+	},
 	{
 		imagesrc: apreptutorsImg,
 		imagealt: '"Screenshot of aPrepTutors landing page',
