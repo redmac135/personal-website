@@ -1,9 +1,18 @@
 <!-- script tag error is caused by mdsvex issue 116 -->
-<script lang="ts">
-	// adding string type causes dev server to crash, issue on mdsvex
+<script>
+	// adding types to these exports causes dev server to crash, issue on mdsvex
+
+	// export let title: string;
+	// export let description = '';
+	// export let meta: { [key: string]: string }[] = [];
+	// export let link: { [key: string]: [string, string] }[] = [];
+
+	//@ts-ignore
 	export let title;
 	export let description = '';
+	//@ts-ignore
 	export let meta = [];
+	//@ts-ignore
 	export let link = [];
 
 	import Article from '$lib/components/Article.svelte';

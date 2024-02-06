@@ -6,7 +6,7 @@ export const SOCIAL_LINKS = {
 	LINKEDIN: 'https://www.linkedin.com/in/ethan-zhao-731a821b7/'
 };
 
-export const RESUME_LINK = '/ethan_zhao_2023.pdf';
+export const RESUME_LINK = '/zhao_ethan_resume.pdf';
 
 import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.webp';
 import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.webp';
