@@ -49,7 +49,7 @@
 		font-size: 1.25rem;
 		line-height: 1.5;
 		word-wrap: break-word;
-		height: 100%;
+		min-height: 100%;
 		padding-bottom: 5rem;
 	}
 </style>
