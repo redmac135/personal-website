@@ -14,8 +14,22 @@ import foursightImg from '$lib/assets/projects/foursight/thumbnail.webp';
 import javaparticlesImg from '$lib/assets/projects/java-particle-fields/thumbnail.webp';
 import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thumbnail.webp';
 import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.webp';
+import rrhImg from '$lib/assets/projects/roberts-rules-helper/thumbnail.webp';
+import memoryEchoImg from '$lib/assets/projects/memory-echo/thumbnail.webp';
 
 export const PROJECTS_LIST = [
+	{
+		imagesrc: rrhImg,
+		imagealt: 'Screenshot of Roberts Rules Helper Website',
+		title: 'Roberts Rules Helper',
+		url: 'roberts-rules-helper'
+	},
+	{
+		imagesrc: memoryEchoImg,
+		imagealt: 'Screenshot of Memory Echo Website',
+		title: 'Memory Echo',
+		url: 'memory-echo'
+	},
 	{
 		imagesrc: apreptutorsImg,
 		imagealt: '"Screenshot of aPrepTutors landing page',

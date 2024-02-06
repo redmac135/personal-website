@@ -1,0 +1,23 @@
+---
+layout: article
+title: Memory Echo
+description: A reminiscence therapy and journaling assistance app.
+meta:
+- stack: Nextjs, SQL, Cloundinary
+- tools: Figma, drawSQL, Web Sockets
+- published: Feb 6th, 2023
+link:
+- github: [https://github.com/redmac135/memory-echo, redmac135/memory-echo]
+---
+
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import memoryEchoImg from '$lib/assets/projects/memory-echo/thumbnail.webp';
+    import memoryEchoGalleryImg from '$lib/assets/projects/memory-echo/gallery.webp';
+</script>
+
+<ArticleImage image={memoryEchoImg} imagealt="Screenshot of Echo App Homepage"/>
+
+Created at the 2023 UofTHacks hackathon, Echo is a reminiscence therapy and journaling assistance app targeted towards those with memory loss related illnesses or diseases. Users would add images and descriptions to their gallery and then be occasionally asked to "reminisce" on their project using active recall. While reminiscing, an active web socket connection with an AI called Nume is established and quantifies their emotions in real time. All this data is stored in a postgreSQL database and influences which gallery item will be shown to them next. Wholistically, this system is capable of improving memory retention through active recall while hosting minor efficiency upgrades such as preferring happier memories or recording coherence and confidence.
+
+<ArticleImage image={memoryEchoGalleryImg} imagealt="Screenshot of Echo App Gallery Page"/>
