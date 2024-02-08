@@ -1,0 +1,41 @@
+---
+layout: article
+title: WQC Intro to Quantum Programming
+description: The commands required during the Western Quantum Club Intro to Quantum Programming workshop.
+---
+
+## Installing a Package Manager
+
+Commands differ between MacOS and Windows users. Be sure to use the correct commands.
+
+For Windows Powershell (ensure you are in an **administrative shell**):
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'));
+Set-ExecutionPolicy RemoteSigned
+```
+
+For MacOS: 
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Congratulations! You've now successfully installed a package manager.
+
+## Installing the Required Packages
+
+For Windows:
+
+```bash
+choco install git python vscode
+```
+
+For MacOS:
+
+```bash
+brew install git pyenv
+brew install --cask visual-studio-code
+```
+
+Now you have python, vscode, and git installed on your machine. Depending on installation, your device may require a restart now.
