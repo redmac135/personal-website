@@ -2,6 +2,8 @@
 layout: article
 title: WQC Intro to Quantum Programming
 description: The commands required during the Western Quantum Club Intro to Quantum Programming workshop.
+link:
+- github: [https://github.com/redmac135/wqc_wec_workshop_2024, redmac135/wqc_wec_workshop_2024]
 ---
 
 ## Installing a Package Manager
@@ -39,3 +41,11 @@ brew install --cask visual-studio-code
 ```
 
 Now you have python, vscode, and git installed on your machine. Depending on installation, your device may require a restart now.
+
+## Running Code!
+
+open vscode's terminal and clone the repository
+
+```bash
+git clone https://github.com/redmac135/wqc_wec_workshop_2024.git
+```
