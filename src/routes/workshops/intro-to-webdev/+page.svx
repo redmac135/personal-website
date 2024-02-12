@@ -1,0 +1,171 @@
+---
+layout: article
+title: Beginning your Journey into Web Dev
+description: From the ground up instruction set for beginning web development and starting your first react app project.
+meta:
+- published: Feb 12th, 2024
+link:
+- github: [https://github.com/redmac135/intro-to-webdev, redmac135/intro-to-webdev]
+---
+
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import windowsAdminShellImg from '$lib/assets/workshops/intro-to-webdev/windows_adminstrative_shell.png';
+    import macShellImg from '$lib/assets/workshops/intro-to-webdev/macos_terminal.webp';
+</script>
+
+Commands differ between MacOS and Windows users. Be sure to use the correct commands.
+
+# Windows
+
+## Step 1: Installing a Package Manager
+
+1. Open an **administrative shell**:
+
+<ArticleImage image={windowsAdminShellImg} imagealt="How to access the Windows admin shell"/>
+
+2. Install the package manager Chocolatey
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'));
+Set-ExecutionPolicy RemoteSigned
+```
+
+3. Ensure the package manager is installed by running the following command
+
+```bash
+choco
+```
+
+Congratulations! You've now successfully installed a package manager.
+
+## Step 2: Installing the Required Packages
+
+1. Install Git and Visual Studio Code
+
+*Note: if you already have either git or vscode installed, remove the respective package from the command below. You can check if you have git installed by running `git` in the terminal*
+
+```bash
+choco install git vscode
+```
+
+2. Install `nvm`
+
+*Note: for this one in particular, it's important that an existing version of `nvm` isn't already installed. Verify that the command `nvm` is not recognized.*
+
+```bash
+choco install nvm
+```
+
+3. Install node.js and npm
+
+```bash
+nvm install lts
+```
+
+Then activate the node version
+
+```bash
+nvm use <the version you just installed>
+```
+
+## Step: 3 Starting a Nextjs project
+
+1. Make a new folder with the name of your app and select it in VSCode
+
+2. Open visual studio code's terminal
+
+    Use the shortcut `ctrl` + <code>`</code>
+
+3. Run the create-next-app command
+
+```bash
+npx create-next-app@latest
+```
+Options:
+- Use Typescript? No
+- Use ESLint? Yes
+- Use Tailwind? No
+- Use `/src` Directory? Yes
+- Use App Router? Yes
+- Customize Default Import Alias? No
+
+# MacOS
+
+## Step 1: Installing a Package Manager
+
+1. Open the terminal (either through launch pad or just through app search):
+
+<ArticleImage image={macShellImg} imagealt="How to access the MacOS shell"/>
+
+2. Install the package manager Brew
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+3. Verify that brew installed by running the following command (you may have to restart first)
+
+```bash
+brew --version
+```
+you should see the version of brew you have installed.
+
+Congratulations! You've now successfully installed a package manager.
+
+## Step 2: Installing the Required Packages
+
+1. Install Git NVM and VSCode
+
+```bash
+brew install git nvm
+brew install --cask visual-studio-code
+```
+
+1. Add nvm to your command list
+
+```bash
+source $(brew --prefix nvm)/nvm.sh
+echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.profile
+```
+
+3. Install node.js and npm
+
+```bash
+nvm install lts
+```
+
+Then activate the node version
+
+```bash
+nvm use <the version you just installed>
+```
+
+Depending on installation, your device may require a restart now.
+
+## Step: 3 Starting a Nextjs project
+
+1. Make a new folder with the name of your app and select it in VSCode
+
+2. Open visual studio code's terminal
+
+    Use the shortcut `ctrl` + <code>`</code>
+
+3. Run the create-next-app command
+
+```bash
+npx create-next-app@latest
+```
+Options:
+- Use Typescript? No
+- Use ESLint? Yes
+- Use Tailwind? No
+- Use `/src` Directory? Yes
+- Use App Router? Yes
+- Customize Default Import Alias? No
+
+## HAVE FUN
+
+If you ever want to see the finalized code from the workshop, check it out at the github url.
+
+🎉 Thanks you for attending! 🎉
