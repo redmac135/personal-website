@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Mindful Reflection Journal
+backlink: [/?scrollto=projects, Projects]
 description: A online mood tracking journal which encourages very short but daily entries to promote self reflection.
 meta:
 - stack: Tailwindcss, Django, MySQL

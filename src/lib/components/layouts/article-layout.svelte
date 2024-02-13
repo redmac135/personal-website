@@ -11,6 +11,8 @@
 	export let title;
 	export let description = '';
 	//@ts-ignore
+	export let backlink = ['', ''];
+	//@ts-ignore
 	export let meta = [];
 	//@ts-ignore
 	export let link = [];
@@ -19,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<meta name="title" content="{title} Project" />
+	<meta name="title" content={title} />
 	{#if !!description}
 		<meta name="description" content={description} />
 	{/if}
@@ -27,7 +29,7 @@
 	<title>{title}</title>
 </svelte:head>
 
-<Article let:Header>
+<Article let:Header {backlink}>
 	<Header let:Title let:MetaItem let:MetaLink>
 		<Title>{title}</Title>
 		{#each meta as metaitem}

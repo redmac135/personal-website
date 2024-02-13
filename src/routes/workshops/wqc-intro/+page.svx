@@ -1,6 +1,7 @@
 ---
 layout: article
 title: WQC Intro to Quantum Programming
+backlink: [/workshops, Workshops]
 description: The commands required during the Western Quantum Club Intro to Quantum Programming workshop.
 link:
 - github: [https://github.com/redmac135/wqc_wec_workshop_2024, redmac135/wqc_wec_workshop_2024]

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Beginning your Journey into Web Dev
+backlink: [/workshops, Workshops]
 description: From the ground up instruction set for beginning web development and starting your first react app project.
 meta:
 - published: Feb 12th, 2024

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: QnA for Intro to Web Dev Workshop
+backlink: [/workshops/intro-to-webdev, Intro to Web Dev]
 description: Common questions and answers for the Intro to Web Dev workshop.
 meta:
 - published: Feb 12th, 2024
