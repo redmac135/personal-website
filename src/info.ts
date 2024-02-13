@@ -67,3 +67,14 @@ export const PROJECTS_LIST = [
 		url: 'java-particle-fields'
 	}
 ];
+
+export const WORKSHOP_LIST = [
+	{
+		title: 'Introduction to Web Development',
+		url: 'intro-to-webdev'
+	},
+	{
+		title: 'Introduction to Quantum Computing',
+		url: 'wqc-intro'
+	}
+]

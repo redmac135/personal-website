@@ -1,0 +1,33 @@
+---
+layout: article
+title: QnA for Intro to Web Dev Workshop
+backlink: [/workshops/intro-to-webdev, Intro to Web Dev]
+description: Common questions and answers for the Intro to Web Dev workshop.
+meta:
+- published: Feb 12th, 2024
+---
+
+## Step 1
+
+Error: `running scripts are not allowed on this machine`
+
+Fix: Run the command `Set-ExecutionPolicy RemoteSigned`
+
+## Step 2
+
+Error: `<some command> is not recognized`
+
+Fix:
+1. Try closing and re-opening your console
+2. Try restarting your computer
+
+## Step 3
+
+Error:
+```bash
+npm ERR! enoent ENOENT: no such file or directory, lstat 'C:\Users\<user>\AppData\Roaming\npm'
+```
+
+Solution:
+- navigate to `C:\Users\<user>\AppData\Roaming`
+- create an empty folder named `npm` if it doesn't exist

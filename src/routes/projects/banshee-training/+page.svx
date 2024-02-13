@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Cadet Training App
+backlink: [/?scrollto=projects, Projects]
 description: An app for 778 Banshee cadets which automatically assigns training, tracks lesson plans, and plans for cadet absences and back up instructors.
 meta:
 - stack: Tailwindcss, Django, MySQL

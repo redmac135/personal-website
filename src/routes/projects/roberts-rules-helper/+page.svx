@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Robert's Rules Helper
+backlink: [/?scrollto=projects, Projects]
 description: An app which automates the implementation of Robert's rules for councils by using inter-user state management.
 meta:
 - stack: SvelteKit, Docker, REST API

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Beginning your Journey into Web Dev
+backlink: [/workshops, Workshops]
 description: From the ground up instruction set for beginning web development and starting your first react app project.
 meta:
 - published: Feb 12th, 2024
@@ -14,7 +15,7 @@ link:
     import macShellImg from '$lib/assets/workshops/intro-to-webdev/macos_terminal.webp';
 </script>
 
-Commands differ between MacOS and Windows users. Be sure to use the correct commands.
+Commands differ between MacOS and Windows users. Be sure to use the correct commands. If you encounter errors, please refer to the [QnA page](/workshops/intro-to-webdev/qna).
 
 # Windows
 
@@ -80,11 +81,11 @@ nvm use <the version you just installed>
 3. Run the create-next-app command
 
 ```bash
-npx create-next-app@latest
+npx create-next-app@latest .
 ```
 Options:
 - Use Typescript? No
-- Use ESLint? Yes
+- Use ESLint? No
 - Use Tailwind? No
 - Use `/src` Directory? Yes
 - Use App Router? Yes
@@ -154,11 +155,11 @@ Depending on installation, your device may require a restart now.
 3. Run the create-next-app command
 
 ```bash
-npx create-next-app@latest
+npx create-next-app@latest .
 ```
 Options:
 - Use Typescript? No
-- Use ESLint? Yes
+- Use ESLint? No
 - Use Tailwind? No
 - Use `/src` Directory? Yes
 - Use App Router? Yes

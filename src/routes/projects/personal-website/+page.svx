@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Personal Website
+backlink: [/?scrollto=projects, Projects]
 description: A personal portfoilo website coded by Ethan Zhao in Sveltekit which showcases his past projects.
 meta:
 - stack: Sveltekit, Vercel

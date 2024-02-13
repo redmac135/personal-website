@@ -4,14 +4,20 @@
 	import './github-markdown-dark.css';
 	import Header from './ArticleHeader.svelte';
 
+	export let backlink: [string, string] | [] = [];
+
 	onMount(() => {
 		pageData.set({ background: '#0d1117' });
+		console.log(backlink);
 	});
 </script>
 
 <main class="markdown-body">
 	<div class="centerer">
-		<nav><a href="/?scrollto=projects">&lt; Projects</a></nav>
+		<!-- this comparison is required as mdsvex returns [] if property is not defined -->
+		{#if backlink[1] !== '' && backlink.length == 2}
+			<nav><a href={backlink[0]}>&lt; {backlink[1]}</a></nav>
+		{/if}
 		<slot {Header} />
 	</div>
 </main>
