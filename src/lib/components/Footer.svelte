@@ -10,8 +10,8 @@
 <footer style:background>
 	<div class="left">
 		<!-- TODO: add dyanmically changing logo -->
-		<img src={logo} alt="White Logo" />
-		<div class="text">Ethan Zhao</div>
+		<a href="/"><img src={logo} class="logo" alt="White Logo" /></a>
+		<div class="text"><a href="/">Ethan Zhao</a></div>
 	</div>
 	<div class="right">
 		<ul>
@@ -71,7 +71,7 @@
 		padding: 1.5rem 0 2rem 1.5rem;
 	}
 
-	.left > img {
+	.logo {
 		position: relative;
 		width: 6rem;
 		padding-bottom: 1.5rem;
@@ -136,20 +136,17 @@
 	}
 
 	@media (min-width: 900px) {
-		.left > img {
-			width: 4rem;
-		}
-
 		.left {
 			display: block;
 			width: 20rem;
 			border-right: 1px lightgray solid;
 		}
 
-		.left > img {
+		.logo {
 			position: absolute;
 			top: 1rem;
 			left: 1rem;
+			width: 4rem;
 		}
 
 		.left > .text {
