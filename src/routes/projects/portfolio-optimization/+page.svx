@@ -1,0 +1,20 @@
+---
+layout: article
+title: Quantum Portfolio Optimization
+backlink: [/?scrollto=projects, Projects]
+description: A portfolio optimization algorithm utilizing quantum computing to optimize previously non-feasible methods.
+meta:
+- stack: Fast API, Nextjs
+- tools: D-Wave, Stock APIs
+- published: Feb 20th, 2024
+- github: temporarily private
+---
+
+<script>
+	import ArticleImage from '$lib/components/ArticleImage.svelte';
+	import quantumPortfolioOptimizationImg from '$lib/assets/projects/portfolio-optimization/thumbnail.png';
+</script>
+
+<ArticleImage image={quantumPortfolioOptimizationImg} imagealt="Screenshot of D-Wave's Inspector" />
+
+Created under the Quantum Club at Western University, this is a portfolio optimization tool which combined in-depth qualitative analysis with quantum-based algorithms. Using quantum computing, brute force optimization methods can be reduced from exponential space and time complexity to constant time and linear space. This tool has been connected with live streaming stock APIs to deliver accurate investing decisions which update based on the market by the hour.
