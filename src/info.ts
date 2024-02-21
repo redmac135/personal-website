@@ -16,6 +16,7 @@ import mindfulReflectionsImg from '$lib/assets/projects/mindful-reflections/thum
 import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.webp';
 import rrhImg from '$lib/assets/projects/roberts-rules-helper/thumbnail.webp';
 import memoryEchoImg from '$lib/assets/projects/memory-echo/thumbnail.webp';
+import quantumPortfolioOptimizationImg from '$lib/assets/projects/portfolio-optimization/thumbnail.png';
 
 export const PROJECTS_LIST = [
 	{
@@ -55,6 +56,12 @@ export const PROJECTS_LIST = [
 		url: 'foursight'
 	},
 	{
+		imagesrc: quantumPortfolioOptimizationImg,
+		imagealt: "Screenshot of D-Wave's Inspector",
+		title: 'Quantum Portfolio Optimization',
+		url: 'portfolio-optimization'
+	},
+	{
 		imagesrc: mindfulReflectionsImg,
 		imagealt: 'Screenshot of Mindful Reflections Website',
 		title: 'Mindful Reflection Journal',
@@ -77,4 +84,4 @@ export const WORKSHOP_LIST = [
 		title: 'Introduction to Quantum Computing',
 		url: 'wqc-intro'
 	}
-]
+];
