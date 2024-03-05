@@ -11,11 +11,11 @@ link:
 
 <script>
     import ArticleImage from '$lib/components/ArticleImage.svelte';
-    import windowsAdminShellImg from '$lib/assets/workshops/intro-to-webdev/windows_adminstrative_shell.png';
-    import macShellImg from '$lib/assets/workshops/intro-to-webdev/macos_terminal.webp';
+    import windowsAdminShellImg from '$lib/assets/workshops/intro-webdev/windows_adminstrative_shell.png';
+    import macShellImg from '$lib/assets/workshops/intro-webdev/macos_terminal.webp';
 </script>
 
-Commands differ between MacOS and Windows users. Be sure to use the correct commands. If you encounter errors, please refer to the [QnA page](/workshops/intro-to-webdev/qna).
+Commands differ between MacOS and Windows users. Be sure to use the correct commands. If you encounter errors, please refer to the [QnA page](/workshops/intro-webdev/qna).
 
 # Windows
 
