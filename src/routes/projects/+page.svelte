@@ -3,6 +3,7 @@
 	import { pageData } from '$lib/stores';
 	import ProjectCards from '$lib/components/ProjectCards.svelte';
 	import Title from '$lib/components/Title.svelte';
+	import LogoLink from '$lib/components/LogoLink.svelte';
 
 	onMount(() => {
 		pageData.set({ background: 'black' });
@@ -16,12 +17,13 @@
 </svelte:head>
 
 <main>
+	<LogoLink />
 	<Title>Projects</Title>
 	<ProjectCards />
 </main>
 
 <style>
 	main {
-		margin-top: 3rem;
+		margin-top: 5rem;
 	}
 </style>
