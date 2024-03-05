@@ -1,0 +1,88 @@
+---
+layout: article
+title: Intro to Quantum Programming
+backlink: [/workshops, Workshops]
+description: The commands required during the Western Quantum Club Intro to Quantum Programming workshop.
+link:
+- github: [https://github.com/redmac135/intro-quantum-computing, redmac135/intro-quantum-computing]
+---
+
+<script>
+    import ArticleImage from '$lib/components/ArticleImage.svelte';
+    import VSCPythonExtension from '$lib/assets/workshops/intro-quantum-computing/VSCPythonExtension.png';
+</script>
+
+## Installing a Package Manager
+
+Commands differ between MacOS and Windows users. Be sure to use the correct commands.
+
+For Windows Powershell (ensure you are in an **administrative shell**):
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'));
+Set-ExecutionPolicy RemoteSigned
+```
+
+For MacOS: 
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Congratulations! You've now successfully installed a package manager.
+
+## Installing the Required Packages
+
+For Windows:
+
+```bash
+choco install git python vscode
+```
+
+For MacOS:
+
+```bash
+brew install git pyenv
+brew install --cask visual-studio-code
+```
+
+Now you have python, vscode, and git installed on your machine. Depending on installation, your device may require a restart now.
+
+## Installing VS Code Extensions
+
+In VS Code, navigate to the Extensions tab and install the "Python Extension" as shown below:
+
+<ArticleImage image={VSCPythonExtension} imagealt="How to Install the Python Extension for Visual Studio Code"/>
+
+## Using DWave
+
+Navigate to the [D-Wave Leap](https://cloud.dwavesys.com/leap/signup/) website and create an account. Once you have an account, you can access the Leap IDE and run your code on a real quantum computer!
+
+## Running Code!
+
+Open vscode's terminal, pick any folder to work in, and clone the example code from the workshop:
+
+```bash
+git clone https://github.com/redmac135/intro-quantum-computing.git
+```
+
+Next, create and use a python virtual environment using the python extension:
+
+1. `Ctrl` + `Shift` + `P` to open the command palette.
+2. Type `>Python: create Environment...` note the first character `>` should already be typed for you.
+3. Choose `Venv` as the environment type.
+4. Choose the first python version you see (it should be the latest version).
+5. Select `requirements.txt` when asked which dependencies to install.
+
+Now you should be able to run the terminal command `dwave setup --auth` to authenticate your account.
+
+1. `Ctrl` + `` ` `` to open the terminal.
+2. Type `dwave setup --auth` and press `Enter`.
+
+This should open a browser window or give you a link to open in your browser. In the browser, you should log in with your LEAP account.
+
+Finally, open the python file and run it! 
+
+## Conclusion
+
+Congrats! You've now run code on an actual quantum computer! 🎉

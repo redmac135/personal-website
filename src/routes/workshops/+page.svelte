@@ -3,6 +3,7 @@
 	import { pageData } from '$lib/stores';
 	import Title from '$lib/components/Title.svelte';
 	import { WORKSHOP_LIST as workshops } from '../../info';
+	import LogoLink from '$lib/components/LogoLink.svelte';
 
 	onMount(() => {
 		pageData.set({ background: 'black' });
@@ -16,6 +17,7 @@
 </svelte:head>
 
 <main>
+	<LogoLink />
 	<Title>Workshops</Title>
 	<section>
 		<ol>

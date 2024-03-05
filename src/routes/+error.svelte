@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import LogoLink from '$lib/components/LogoLink.svelte';
 </script>
 
 <main>
+	<LogoLink />
 	<div class="centered">
 		<p class="aw-text">aw man...</p>
 		<div class="error-message">

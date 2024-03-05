@@ -78,10 +78,10 @@ export const PROJECTS_LIST = [
 export const WORKSHOP_LIST = [
 	{
 		title: 'Introduction to Web Development',
-		url: 'intro-to-webdev'
+		url: 'intro-webdev'
 	},
 	{
 		title: 'Introduction to Quantum Computing',
-		url: 'wqc-intro'
+		url: 'intro-quantum-computing'
 	}
 ];
