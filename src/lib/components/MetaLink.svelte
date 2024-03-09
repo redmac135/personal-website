@@ -13,7 +13,6 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		margin-left: 1rem;
 		margin-bottom: 0.4rem;
 		white-space: nowrap;
 	}
@@ -35,11 +34,18 @@
 
 	a {
 		font-size: 1rem;
+		word-wrap: break-word;
+		min-width: 0;
+		overflow-y: auto;
 	}
 
 	@media (min-width: 500px) {
 		a {
 			font-size: 1.25rem;
+		}
+
+		.meta {
+			margin-left: 1rem;
 		}
 	}
 
