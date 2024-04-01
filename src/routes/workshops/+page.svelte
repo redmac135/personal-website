@@ -33,6 +33,10 @@
 		margin-top: 3rem;
 	}
 
+	ol {
+		text-align: center;
+	}
+
 	section {
 		display: flex;
 		justify-content: center;
