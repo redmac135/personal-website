@@ -9,7 +9,6 @@ meta:
 - published: Feb 3rd, 2023
 link:
 - github: [https://github.com/redmac135/roberts-rules-helper, redmac135/roberts-rules-helper]
-- live: [https://rrh.apps.ethanzhao.me/, rrh.apps.ethanzhao.me]
 ---
 
 <script>
