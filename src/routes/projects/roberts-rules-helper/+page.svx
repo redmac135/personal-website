@@ -5,7 +5,7 @@ backlink: [/?scrollto=projects, Projects]
 description: An app which automates the implementation of Robert's rules for councils by using inter-user state management.
 meta:
 - stack: SvelteKit, Docker, REST API
-- tools: Figma, drawSQL, Web Sockets, Ocean VPS
+- tools: Figma, Web Sockets, VPS
 - published: Feb 3rd, 2023
 link:
 - github: [https://github.com/redmac135/roberts-rules-helper, redmac135/roberts-rules-helper]
