@@ -15,6 +15,7 @@
 		align-items: center;
 		margin-bottom: 0.4rem;
 		white-space: nowrap;
+		margin-left: 1rem;
 	}
 
 	.item {
@@ -42,10 +43,6 @@
 	@media (min-width: 500px) {
 		a {
 			font-size: 1.25rem;
-		}
-
-		.meta {
-			margin-left: 1rem;
 		}
 	}
 
