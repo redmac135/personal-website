@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { PROJECTS_LIST as projects } from '../../info';
-	import logo from '$lib/assets/whitelogo.png';
+	import logo from '$lib/assets/logowhite.webp';
 	import { SOCIAL_LINKS } from '../../info';
 
 	const socials = Object.entries(SOCIAL_LINKS);

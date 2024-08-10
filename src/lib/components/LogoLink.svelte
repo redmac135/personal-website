@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from '$lib/assets/whitelogo.png';
+	import logo from '$lib/assets/logowhite.webp';
 </script>
 
 <a href="/"
