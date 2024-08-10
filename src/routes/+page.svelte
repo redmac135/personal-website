@@ -87,7 +87,6 @@
 <svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
 
 <svelte:head>
-	<!-- fonts for social icons -->
 	<meta name="title" content="Ethan Zhao" />
 	<meta
 		name="description"
@@ -97,13 +96,18 @@
 </svelte:head>
 
 <main>
+	<!-- scroll-snap is used to make the page snap to the top of the screen when scrolling -->
+	<div class="scroll-snap" style="top: 0;" />
+	<div class="scroll-snap" style="top: 140vh" />
+	<div class="scroll-snap" style="top: 250vh" />
+
 	<!-- home opacity animation is redundant -->
 	<div id="home" style:opacity={y < 3 * innerHeight ? 1 : 0}>
 		<div class="sticky-container">
 			<div id="scroll-icon" style:opacity={y < 2 * innerHeight ? 1 : 0}><span /></div>
 			<div
 				id="darkener"
-				style:opacity={interpolate(y, 0.9 * innerHeight, 1.8 * innerHeight, 0, 1)}
+				style:opacity={interpolate(y, 0.6 * innerHeight, 1.4 * innerHeight, 0, 1)}
 			/>
 			<div
 				id="foreground-image"
@@ -281,13 +285,22 @@
 </main>
 
 <style>
+	:global(html) {
+		scroll-snap-type: y proximity;
+	}
+
 	main {
 		background-color: black;
 		overflow-x: clip;
 	}
 
+	.scroll-snap {
+		position: absolute;
+		scroll-snap-align: start;
+	}
+
 	#home {
-		height: 300vh;
+		height: 250vh;
 	}
 
 	.sticky-container {
