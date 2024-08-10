@@ -96,11 +96,6 @@
 </svelte:head>
 
 <main>
-	<!-- scroll-snap is used to make the page snap to the top of the screen when scrolling -->
-	<div class="scroll-snap" style="top: 0;" />
-	<div class="scroll-snap" style="top: 140vh" />
-	<div class="scroll-snap" style="top: 250vh" />
-
 	<!-- home opacity animation is redundant -->
 	<div id="home" style:opacity={y < 3 * innerHeight ? 1 : 0}>
 		<div class="sticky-container">
@@ -285,18 +280,9 @@
 </main>
 
 <style>
-	:global(html) {
-		scroll-snap-type: y proximity;
-	}
-
 	main {
 		background-color: black;
 		overflow-x: clip;
-	}
-
-	.scroll-snap {
-		position: absolute;
-		scroll-snap-align: start;
 	}
 
 	#home {
