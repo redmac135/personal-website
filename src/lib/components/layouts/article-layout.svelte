@@ -1,21 +1,30 @@
-<!-- script tag error is caused by mdsvex issue 116 -->
 <script>
-	// adding types to these exports causes dev server to crash, issue on mdsvex
+	// using typescript is not supported by mdsvex -- see issue 116
 
-	// export let title: string;
-	// export let description = '';
-	// export let meta: { [key: string]: string }[] = [];
-	// export let link: { [key: string]: [string, string] }[] = [];
-
-	//@ts-ignore
+	/**
+	 * @type {string}
+	 */
 	export let title;
+
+	/**
+	 * @type {string}
+	 */
 	export let description = '';
-	//@ts-ignore
-	export let backlink = ['', ''];
-	//@ts-ignore
+
+	/**
+	 * @type { { [key: string]: string }[] }
+	 */
 	export let meta = [];
-	//@ts-ignore
+
+	/**
+	 * @type { { [key: string]: [string, string] }[] }
+	 */
 	export let link = [];
+
+	/**
+	 * @type {[string, string]}
+	 */
+	export let backlink = ['', ''];
 
 	import Article from '$lib/components/Article.svelte';
 </script>
