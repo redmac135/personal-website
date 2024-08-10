@@ -99,7 +99,7 @@
 	<!-- home opacity animation is redundant -->
 	<div id="home" style:opacity={y < 3 * innerHeight ? 1 : 0}>
 		<div class="sticky-container">
-			<div id="scroll-icon" style:opacity={y < 2 * innerHeight ? 1 : 0}><span /></div>
+			<div id="scroll-icon" style:opacity={y < 1.5 * innerHeight ? 1 : 0}><span /></div>
 			<div
 				id="darkener"
 				style:opacity={interpolate(y, 0.6 * innerHeight, 1.4 * innerHeight, 0, 1)}
