@@ -121,17 +121,10 @@
 				class="centerer about"
 				style:opacity={interpolate(y, 0.6 * innerHeight, 0.9 * innerHeight, 0, 1)}
 			>
-				<div>
-					<h1
-						class="about-title"
-						style="padding-bottom: 2rem;"
-						style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
-					>
-						about
-					</h1>
+				<div style:opacity={interpolate(y, 1.2 * innerHeight, 2.1 * innerHeight, 1, 0)}>
+					<h1 class="about-title">about</h1>
 					<p
 						class="about-detail"
-						style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
 						style:transform="translateY({interpolate(
 							y,
 							0.6 * innerHeight,
@@ -140,17 +133,15 @@
 							0
 						)}rem)"
 					>
-						Ethan is a passion driven Engineering student studying at Western University and
-						pursuing a Software Engineering and Ivey HBA double degree. He has worked with numerous
-						groups from science fair teams of 4 people to squadron wide applications serving over
-						200 people. With each project, Ethan expands his skillset, striving to learn new skills
-						each time while maintaining a high level of impact with each release. He hopes he can
-						continue his journey of growth and teamwork by working on larger and more influential
-						projects.
+						👋 Hi there! I'm a passion driven second year student studying a Mechatronics
+						Engineering and Business HBA double degree at Western University. Starting from hobby
+						projects and science fairs back in grade 9, I now find myself leading teams of 60 people
+						to build apps used by thousands. As each subsequent project expands in scope, I get to
+						use my skills and expertise to make the lives of an ever increasing amount of people,
+						more enjoyable.
 					</p>
 					<div
 						class="about-links-container"
-						style:opacity={interpolate(y, 1.9 * innerHeight, 2.4 * innerHeight, 1, 0)}
 						style:transform="translateY({interpolate(
 							y,
 							0.6 * innerHeight,
@@ -468,6 +459,11 @@
 	.about-title {
 		text-transform: uppercase;
 		z-index: inherit;
+		padding-bottom: 1rem;
+	}
+
+	.about-detail {
+		padding-bottom: 0.5rem;
 	}
 
 	.intro-title {
