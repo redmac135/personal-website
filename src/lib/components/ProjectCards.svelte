@@ -3,13 +3,20 @@
 	import { PROJECTS_LIST as projects } from '../../info';
 </script>
 
-<div class="card-wrapper">
-	{#each projects as project}
-		<ProjectCard {...project} />
-	{/each}
+<div class="centered">
+	<div class="card-wrapper">
+		{#each projects as project}
+			<ProjectCard {...project} />
+		{/each}
+	</div>
 </div>
 
 <style>
+	.centered {
+		display: flex;
+		justify-content: center;
+	}
+
 	.card-wrapper {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -19,6 +26,7 @@
 		margin-left: 2rem;
 		margin-right: 2rem;
 		margin-bottom: 5rem;
+		max-width: 100rem;
 	}
 
 	@media (min-width: 900px) {
