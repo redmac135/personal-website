@@ -123,7 +123,7 @@ HUFFMAN_TREE_NODE *decode_huffman_tree(DECODE_FILE_IO *file_io) {
 ```
 
 ## Useful Strategies
-Something I only realized while I was celebrating my success in this project, I never an error I didn't handle. Something I started doing after watching a YouTube short by ThePrimeagen is negative space programming. 
+Something I only realized while I was celebrating my success in this project, I never didn't know why my program crashed--a pain I'm too familar with as a C programmer. Something I started doing after watching a YouTube short by ThePrimeagen is "negative space programming".
 
 Whenever I reach a point in my code and make an assumption such as "the array should be empty when this is called" or "the pointer shouldn't be at the end," I add an assertion to make this true. This way, instead of a segmentation fault or core dump, I receive an assertion error that tells me exactly what assumption I made that was wrong. 
 
