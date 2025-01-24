@@ -17,8 +17,15 @@ import bansheeTrainingImg from '$lib/assets/projects/banshee-training/thumbnail.
 import rrhImg from '$lib/assets/projects/roberts-rules-helper/thumbnail.webp';
 import memoryEchoImg from '$lib/assets/projects/memory-echo/thumbnail.webp';
 import quantumPortfolioOptimizationImg from '$lib/assets/projects/portfolio-optimization/thumbnail.png';
+import cHuffmanEncoderImg from '$lib/assets/projects/c-huffman-encoder/thumbnail.png';
 
 export const PROJECTS_LIST = [
+	{
+		imagesrc: cHuffmanEncoderImg,
+		imagealt: 'Screenshot of Huffman Encoder encoder.c file',
+		title: 'Huffman Encoder in C',
+		url: 'c-huffman-encoder'
+	},
 	{
 		imagesrc: rrhImg,
 		imagealt: 'Screenshot of Roberts Rules Helper Website',
