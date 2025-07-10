@@ -1,6 +1,10 @@
 <script lang="ts">
-	export let image: string;
-	export let imagealt: string;
+	interface Props {
+		image: string;
+		imagealt: string;
+	}
+
+	let { image, imagealt }: Props = $props();
 </script>
 
 <section>

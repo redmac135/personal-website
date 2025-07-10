@@ -4,7 +4,12 @@
 	import './github-markdown-dark.css';
 	import Header from './ArticleHeader.svelte';
 
-	export let backlink: [string, string] | [] = [];
+	interface Props {
+		backlink?: [string, string] | [];
+		children?: import('svelte').Snippet<[any]>;
+	}
+
+	let { backlink = [], children }: Props = $props();
 
 	onMount(() => {
 		pageData.set({ background: '#0d1117' });
@@ -18,7 +23,7 @@
 		{#if backlink[1] !== '' && backlink.length == 2}
 			<nav><a href={backlink[0]}>&lt; {backlink[1]}</a></nav>
 		{/if}
-		<slot {Header} />
+		{@render children?.({ Header })}
 	</div>
 </main>
 
@@ -50,8 +55,9 @@
 		margin: 0;
 		color: #c9d1d9;
 		background-color: #0d1117;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial,
-			sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+		font-family:
+			-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif,
+			'Apple Color Emoji', 'Segoe UI Emoji';
 		font-size: 1.25rem;
 		line-height: 1.5;
 		word-wrap: break-word;

@@ -10,6 +10,11 @@
 
 	// cross-fade transition
 	import { onNavigate } from '$app/navigation';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	onNavigate((navigation) => {
 		// document.startViewTransition type is granted by @types/dom-view-transitions
@@ -24,5 +29,5 @@
 	});
 </script>
 
-<slot />
+{@render children?.()}
 <Footer background={$pageData.background} />

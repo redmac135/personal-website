@@ -2,10 +2,15 @@
 	import Title from './Title.svelte';
 	import MetaItem from './MetaItem.svelte';
 	import MetaLink from './MetaLink.svelte';
+	interface Props {
+		children?: import('svelte').Snippet<[any]>;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <div class="heading">
-	<slot {Title} {MetaItem} {MetaLink} />
+	{@render children?.({ Title, MetaItem, MetaLink })}
 </div>
 
 <style>

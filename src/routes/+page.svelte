@@ -3,14 +3,14 @@
 	import imgtitle from '$lib/assets/homepage/text-thelifeofethanzhao.png';
 	import Title from '$lib/components/Title.svelte';
 	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import '$lib/assets/css/fontawesome.min.css';
 	import { SOCIAL_LINKS, RESUME_LINK } from '../info';
 	import { pageData } from '$lib/stores';
 
-	let y = 0;
-	let innerHeight: number;
-	let innerWidth: number;
+	let y = $state(0);
+	let innerHeight: number = $state(0);
+	let innerWidth: number = $state(0);
 	const IMAGE_RATIO = 16 / 9;
 	const WINDOW_RATIO = 828 / 500;
 	const WINDOW_HORIZONTAL_RATIO = 828 / 1920;
@@ -66,7 +66,7 @@
 	}
 
 	function scrollToTarget() {
-		const scrollto: string | null = $page.url.searchParams.get('scrollto');
+		const scrollto: string | null = page.url.searchParams.get('scrollto');
 		if (!scrollto) return;
 		const el: HTMLElement | null = document.getElementById(scrollto);
 		if (!el) return;
@@ -99,17 +99,17 @@
 	<!-- home opacity animation is redundant -->
 	<div id="home" style:opacity={y < 3 * innerHeight ? 1 : 0}>
 		<div class="sticky-container">
-			<div id="scroll-icon" style:opacity={y < 1.5 * innerHeight ? 1 : 0}><span /></div>
+			<div id="scroll-icon" style:opacity={y < 1.5 * innerHeight ? 1 : 0}><span></span></div>
 			<div
 				id="darkener"
 				style:opacity={interpolate(y, 0.6 * innerHeight, 1.4 * innerHeight, 0, 1)}
-			/>
+			></div>
 			<div
 				id="foreground-image"
 				style:transform="scale3d({interpolate(y, 0, 1 * innerHeight, 1, foreground_scale_factor())},
 				{interpolate(y, 0, 1 * innerHeight, 1, foreground_scale_factor())}, 1)"
 				style:opacity={y < 1.8 * innerHeight ? 1 : 0}
-			/>
+			></div>
 			<div class="centerer intro-title" style:opacity={interpolate(y, 0, 0.5 * innerHeight, 1, 0)}>
 				<img
 					src={imgtitle}
@@ -249,7 +249,7 @@
 				</div>
 			</div>
 			<!-- id used for auto scrolling -->
-			<div id="about" style="position: absolute; top: {1.8 * innerHeight}px;" />
+			<div id="about" style="position: absolute; top: {1.8 * innerHeight}px;"></div>
 			<div
 				id="background-image"
 				style:transform="scale3d({interpolate(
@@ -261,7 +261,7 @@
 				)},
 				{interpolate(y, 0, 1 * innerHeight, 1, (foreground_scale_factor() - 1) / 2 + 1)}, 1)"
 				style:opacity={y < 1.8 * innerHeight ? 1 : 0}
-			/>
+			></div>
 		</div>
 	</div>
 	<div id="projects">
