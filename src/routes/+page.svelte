@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 	import { page } from '$app/state';
 	import '$lib/assets/css/fontawesome.min.css';
-	import { SOCIAL_LINKS, RESUME_LINK } from '../info';
+	import { SOCIAL_LINKS, RESUME_LINK, ARIA_LABELS } from '../info';
 	import { pageData } from '$lib/stores';
 
 	let y = $state(0);
@@ -153,6 +153,7 @@
 						<div class="social-links">
 							<a
 								href={SOCIAL_LINKS.EMAIL}
+								aria-label={ARIA_LABELS.EMAIL}
 								target="_blank"
 								rel="noopener noreferrer"
 								class="social-button"
@@ -169,6 +170,7 @@
 							>
 							<a
 								href={SOCIAL_LINKS.GITHUB}
+								aria-label={ARIA_LABELS.GITHUB}
 								target="_blank"
 								rel="noopener noreferrer"
 								class="social-button"
@@ -186,12 +188,14 @@
 							<!-- for small screen -->
 							<a
 								href={RESUME_LINK}
+								aria-label={ARIA_LABELS.RESUME}
 								target="_blank"
 								rel="noopener noreferrer"
 								class="wide-screen fancy-button">Resume</a
 							>
 							<a
 								href={SOCIAL_LINKS.PHONE}
+								aria-label={ARIA_LABELS.PHONE}
 								target="_blank"
 								rel="noopener noreferrer"
 								class="social-button"
@@ -208,6 +212,7 @@
 							>
 							<a
 								href={SOCIAL_LINKS.LINKEDIN}
+								aria-label={ARIA_LABELS.LINKEDIN}
 								target="_blank"
 								rel="noopener noreferrer"
 								class="social-button"
@@ -241,6 +246,7 @@
 						<!-- for wide screen -->
 						<a
 							href={RESUME_LINK}
+							aria-label={ARIA_LABELS.RESUME}
 							target="_blank"
 							rel="noopener noreferrer"
 							class="small-screen fancy-button">Resume</a
