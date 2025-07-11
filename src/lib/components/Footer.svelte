@@ -4,7 +4,11 @@
 	import { SOCIAL_LINKS } from '../../info';
 
 	const socials = Object.entries(SOCIAL_LINKS);
-	export let background: string;
+	interface Props {
+		background: string;
+	}
+
+	let { background }: Props = $props();
 </script>
 
 <footer style:background>

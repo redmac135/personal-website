@@ -1,10 +1,15 @@
 <script lang="ts">
-	export let item: string;
+	interface Props {
+		item: string;
+		children?: import('svelte').Snippet;
+	}
+
+	let { item, children }: Props = $props();
 </script>
 
 <div class="meta">
 	<div class="item">{item}</div>
-	<div class="value"><slot /></div>
+	<div class="value">{@render children?.()}</div>
 </div>
 
 <style>

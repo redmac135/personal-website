@@ -8,6 +8,14 @@ export const SOCIAL_LINKS = {
 
 export const RESUME_LINK = '/zhao_ethan_resume.pdf';
 
+export const ARIA_LABELS = {
+	EMAIL: 'Email Ethan Zhao',
+	PHONE: 'Call Ethan Zhao',
+	GITHUB: "Visit Ethan Zhao's GitHub profile",
+	LINKEDIN: "Visit Ethan Zhao's LinkedIn profile",
+	RESUME: "Download Ethan Zhao's resume"
+};
+
 import personalWebsiteImg from '$lib/assets/projects/personal-website/thumbnail.webp';
 import apreptutorsImg from '$lib/assets/projects/apreptutors/thumbnail.webp';
 import foursightImg from '$lib/assets/projects/foursight/thumbnail.webp';

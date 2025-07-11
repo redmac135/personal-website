@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import LogoLink from '$lib/components/LogoLink.svelte';
 </script>
 
@@ -8,8 +8,8 @@
 	<div class="centered">
 		<p class="aw-text">aw man...</p>
 		<div class="error-message">
-			<h1>{$page.status}</h1>
-			<p>{$page.error?.message}</p>
+			<h1>{page.status}</h1>
+			<p>{page.error?.message}</p>
 		</div>
 		<br />
 		<p>sorry about that. Let me <a href="/">take you back</a>.</p>
