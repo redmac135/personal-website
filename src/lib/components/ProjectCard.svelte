@@ -1,8 +1,12 @@
 <script lang="ts">
-	export let imagesrc: string;
-	export let imagealt: string;
-	export let title: string;
-	export let url: string;
+	interface Props {
+		imagesrc: string;
+		imagealt: string;
+		title: string;
+		url: string;
+	}
+
+	let { imagesrc, imagealt, title, url }: Props = $props();
 </script>
 
 <a class="wrapper" href="/projects/{url}">

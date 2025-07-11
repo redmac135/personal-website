@@ -1,6 +1,10 @@
 <script lang="ts">
-	export let item: string;
-	export let link: [string, string];
+	interface Props {
+		item: string;
+		link: [string, string];
+	}
+
+	let { item, link }: Props = $props();
 </script>
 
 <div class="meta">
