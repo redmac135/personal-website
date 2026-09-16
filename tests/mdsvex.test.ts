@@ -1,9 +1,18 @@
 import { render, screen } from '@testing-library/svelte';
 import { compile } from 'mdsvex';
 import { describe, expect, it } from 'vitest';
+import type { Component } from 'svelte';
 import mdsvexConfig from '../mdsvex.config.js';
-import PersonalWebsite from '../src/routes/projects/personal-website/+page.svx';
-import IntroWebdev from '../src/routes/workshops/intro-webdev/+page.svx';
+
+const mdsvexRoutes = import.meta.glob('../src/routes/**/*.svx', {
+	eager: true,
+	import: 'default'
+});
+
+const PersonalWebsite = mdsvexRoutes[
+	'../src/routes/projects/personal-website/+page.svx'
+] as Component;
+const IntroWebdev = mdsvexRoutes['../src/routes/workshops/intro-webdev/+page.svx'] as Component;
 
 describe('mdsvex content routes', () => {
 	it('exposes a compilable Svelte component through mdsvex', async () => {
