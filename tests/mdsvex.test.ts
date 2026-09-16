@@ -1,9 +1,17 @@
 import { render, screen } from '@testing-library/svelte';
+import { compile } from 'mdsvex';
 import { describe, expect, it } from 'vitest';
+import mdsvexConfig from '../mdsvex.config.js';
 import PersonalWebsite from '../src/routes/projects/personal-website/+page.svx';
 import IntroWebdev from '../src/routes/workshops/intro-webdev/+page.svx';
 
 describe('mdsvex content routes', () => {
+	it('exposes a compilable Svelte component through mdsvex', async () => {
+		const compiled = await compile('# Compiled content', mdsvexConfig);
+
+		expect(compiled?.code).toBeTypeOf('string');
+	});
+
 	it('renders the personal website article with metadata and navigation', () => {
 		render(PersonalWebsite);
 

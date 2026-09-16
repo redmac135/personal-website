@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { render, screen } from '@testing-library/svelte';
 import Homepage from '../src/routes/+page.svelte';
 
-	describe('homepage identity and navigation', () => {
+describe('homepage identity and navigation', () => {
 	it('renders current metadata and profile links', () => {
 		render(Homepage);
 
@@ -14,7 +14,7 @@ import Homepage from '../src/routes/+page.svelte';
 		expect(
 			screen.getByText(/fourth year student studying a Mechatronics Engineering/)
 		).toBeInTheDocument();
-		expect(screen.getByRole('link', { name: /linkedin/i })).toHaveAttribute(
+		expect(screen.getByRole('link', { name: 'LinkedIn' })).toHaveAttribute(
 			'href',
 			'https://linkedin.com/in/ethanyzhao'
 		);
