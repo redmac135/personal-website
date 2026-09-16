@@ -2,8 +2,7 @@
 export const SOCIAL_LINKS = {
 	EMAIL: 'mailto:ethanzhao1981@gmail.com',
 	PHONE: 'tel:6475224188',
-	GITHUB: 'https://github.com/redmac135',
-	LINKEDIN: 'https://linkedin.com/in/ethanyzhao'
+	GITHUB: 'https://github.com/redmac135'
 };
 
 export const RESUME_LINK = '/zhao_ethan_resume.pdf';
@@ -12,7 +11,6 @@ export const ARIA_LABELS = {
 	EMAIL: 'Email Ethan Zhao',
 	PHONE: 'Call Ethan Zhao',
 	GITHUB: "Visit Ethan Zhao's GitHub profile",
-	LINKEDIN: "Visit Ethan Zhao's LinkedIn profile",
 	RESUME: "Download Ethan Zhao's resume"
 };
 

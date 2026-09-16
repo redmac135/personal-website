@@ -1,5 +1,5 @@
 export const ABOUT_DESCRIPTION =
-	"👋 Hi there! I'm a passion driven fourth year student studying a Mechatronics Engineering and Business HBA double degree at Western University. Starting from hobby projects and science fairs back in grade 9, I now find myself leading teams of 60 people to build apps used by thousands. As each subsequent project expands in scope, I get to use my skills and expertise to make the lives of an ever increasing amount of people, more enjoyable.";
+	"👋 Hi there! I'm Ethan, a fourth year Mechatronics Engineering and Business HBA student at Western University who enjoys turning ambitious ideas into useful apps. I lead teams, build projects, and keep learning through hands-on work across software, design, and engineering.";
 
 export const SITE_DESCRIPTION =
-	'Ethan Zhao is a fourth year Mechatronics Engineering and Business HBA student. For current information, visit https://linkedin.com/in/ethanyzhao.';
+	'Ethan Zhao is a fourth year Mechatronics Engineering and Business HBA student who builds useful apps and leads hands-on engineering projects.';
