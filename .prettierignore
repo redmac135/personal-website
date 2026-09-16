@@ -11,3 +11,7 @@ node_modules
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Keep the vendored markdown theme and generated manifest in their upstream formats.
+src/lib/components/github-markdown-dark.css
+static/site.webmanifest

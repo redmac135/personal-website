@@ -2,6 +2,8 @@
 
 A personal portfolio website written using sveltekit.
 
+Ethan Zhao is a fourth year Mechatronics Engineering and Business HBA student. For current information, visit [LinkedIn](https://linkedin.com/in/ethanyzhao).
+
 ## About
 
 ### Intro Animation

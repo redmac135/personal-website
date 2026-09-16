@@ -19,7 +19,7 @@
 
 <main class="markdown-body">
 	<div class="centerer">
-		<!-- this comparison is required as mdsvex returns [] if property is not defined -->
+		<!-- mdsvex 0.12.8 omits absent backlink metadata, so the Svelte default is []; keep the tuple-or-empty type and guard before indexing. -->
 		{#if backlink[1] !== '' && backlink.length == 2}
 			<nav><a href={backlink[0]}>&lt; {backlink[1]}</a></nav>
 		{/if}

@@ -7,6 +7,7 @@
 	import '$lib/assets/css/fontawesome.min.css';
 	import { SOCIAL_LINKS, RESUME_LINK, ARIA_LABELS } from '../info';
 	import { pageData } from '$lib/stores';
+	import { ABOUT_DESCRIPTION, SITE_DESCRIPTION } from '../site';
 
 	let y = $state(0);
 	let innerHeight: number = $state(0);
@@ -88,10 +89,7 @@
 
 <svelte:head>
 	<meta name="title" content="Ethan Zhao" />
-	<meta
-		name="description"
-		content="A personal portfoilo website coded by Ethan Zhao which showcases his past projects."
-	/>
+	<meta name="description" content={SITE_DESCRIPTION} />
 	<title>Ethan Zhao</title>
 </svelte:head>
 
@@ -133,12 +131,9 @@
 							0
 						)}rem)"
 					>
-						👋 Hi there! I'm a passion driven second year student studying a Mechatronics
-						Engineering and Business HBA double degree at Western University. Starting from hobby
-						projects and science fairs back in grade 9, I now find myself leading teams of 60 people
-						to build apps used by thousands. As each subsequent project expands in scope, I get to
-						use my skills and expertise to make the lives of an ever increasing amount of people,
-						more enjoyable.
+						{ABOUT_DESCRIPTION}
+						For current information, visit{' '}
+						<a href={SOCIAL_LINKS.LINKEDIN} target="_blank" rel="noopener noreferrer">LinkedIn</a>.
 					</p>
 					<div
 						class="about-links-container"

@@ -3,7 +3,7 @@ export const SOCIAL_LINKS = {
 	EMAIL: 'mailto:ethanzhao1981@gmail.com',
 	PHONE: 'tel:6475224188',
 	GITHUB: 'https://github.com/redmac135',
-	LINKEDIN: 'https://www.linkedin.com/in/ethan-zhao-731a821b7/'
+	LINKEDIN: 'https://linkedin.com/in/ethanyzhao'
 };
 
 export const RESUME_LINK = '/zhao_ethan_resume.pdf';
